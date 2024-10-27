@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65C23C67-8513-483D-8AD8-18AECFC59485}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoBancoDeDados</RootNamespace>
+    <AssemblyName>ProjetoBancoDeDados</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UCs\Frm_BrowsePlans_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_BrowsePlans_UC.Designer.cs">
+      <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_CreateAccount.Designer.cs">
+      <DependentUpon>Frm_CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_EditProfile_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_EditProfile_UC.Designer.cs">
+      <DependentUpon>Frm_EditProfile_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_GetHelp_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_GetHelp_UC.Designer.cs">
+      <DependentUpon>Frm_GetHelp_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_LoginAdmin.Designer.cs">
+      <DependentUpon>Frm_LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_MainMenu.Designer.cs">
+      <DependentUpon>Frm_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_MyFiles_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_MyFiles_UC.Designer.cs">
+      <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_NewFile_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_NewFile_UC.Designer.cs">
+      <DependentUpon>Frm_NewFile_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_Notifications_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_Notifications_UC.Designer.cs">
+      <DependentUpon>Frm_Notifications_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\Frm_ShareList_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_ShareList_UC.Designer.cs">
+      <DependentUpon>Frm_ShareList_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UCs\Frm_BrowsePlans_UC.resx">
+      <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_CreateAccount.resx">
+      <DependentUpon>Frm_CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_EditProfile_UC.resx">
+      <DependentUpon>Frm_EditProfile_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_GetHelp_UC.resx">
+      <DependentUpon>Frm_GetHelp_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_LoginAdmin.resx">
+      <DependentUpon>Frm_LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_MainMenu.resx">
+      <DependentUpon>Frm_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_MyFiles_UC.resx">
+      <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_NewFile_UC.resx">
+      <DependentUpon>Frm_NewFile_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_Notifications_UC.resx">
+      <DependentUpon>Frm_Notifications_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_ShareList_UC.resx">
+      <DependentUpon>Frm_ShareList_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

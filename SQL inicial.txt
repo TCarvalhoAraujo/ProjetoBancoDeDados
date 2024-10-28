@@ -1,0 +1,88 @@
+CREATE TABLE Instituicao (
+    id_instituicao INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+	causa_social VARCHAR(100) NOT NULL,
+    endereco VARCHAR(100) NOT NULL,
+    duracao VARCHAR(100),
+    data_aquisicao DATE,
+	espaco_usuario VARCHAR(100) NOT NULL,
+);
+
+CREATE TABLE Usuario (
+    id_usuario INT PRIMARY KEY,
+	id_instituicao INT,
+    login VARCHAR(50) UNIQUE NOT NULL,
+    senha VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    data_ingresso DATE,
+    FOREIGN KEY (id_instituicao) REFERENCES Instituicao(id_instituicao)
+);
+
+CREATE TABLE Administrador (
+    id_admin INT PRIMARY KEY
+);
+
+CREATE TABLE Suporte (
+    id_suporte INT PRIMARY KEY,
+    descricao TEXT NOT NULL,
+    id_usuario INT,
+	id_admin INT,
+	dia VARCHAR(50),
+	hora DATETIME,
+	descricao_suporte VARCHAR(200),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_admin) REFERENCES Administrador(id_admin)
+);
+
+CREATE TABLE Arquivo (
+    id_arquivo INT PRIMARY KEY,
+	id_usuario INT,
+    id_admin INT,
+    nome VARCHAR(100) NOT NULL,
+    tipo VARCHAR(100) NOT NULL,
+	permissao_acesso VARCHAR(100) NOT NULL,
+    tamanho INT NOT NULL,
+    data_modificacao DATE,
+	localizacao VARCHAR(100) NOT NULL,
+	url VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_admin) REFERENCES Administrador(id_admin)
+);
+
+CREATE TABLE Operar (
+    tipo_operacao INT PRIMARY KEY,
+    data_operacao DATE NOT NULL,
+    id_arquivo INT,
+    FOREIGN KEY (id_arquivo) REFERENCES Arquivo(id_arquivo)
+);
+
+CREATE TABLE Compartilhar (
+    id_compartilhamento INT PRIMARY KEY,
+    id_dono INT,
+    id_arquivo INT,
+    data_compartilhamento DATETIME NOT NULL,
+    FOREIGN KEY (id_dono) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_arquivo) REFERENCES Arquivo(id_arquivo)
+);
+
+CREATE TABLE Comentar (
+    conteudo TEXT NOT NULL,
+    data_comentario DATE NOT NULL,
+	hora DATETIME,
+    usuario_id INT,
+    arquivo_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (arquivo_id) REFERENCES Arquivo(id_arquivo)
+);
+
+CREATE TABLE Historico_Versionamento (
+    id_historico INT PRIMARY KEY,
+	id_arquivo INT,
+	id_usuario INT,
+	operacao INT,
+	data_versionamento DATE,
+    data_ingresso DATETIME NOT NULL,
+    FOREIGN KEY (id_arquivo) REFERENCES Arquivo(id_arquivo),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (operacao) REFERENCES Operar(tipo_operacao)
+);

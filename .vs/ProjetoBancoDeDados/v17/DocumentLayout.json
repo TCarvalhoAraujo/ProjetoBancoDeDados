@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\forms\\frm_createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\.gitgnore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitgnore||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\forms\\frm_createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\queries\\loginvalidationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\queries\\loginvalidationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,31 +34,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Frm_CreateAccount.cs",
-              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T19:35:25.527Z",
+              "DocumentIndex": 0,
+              "Title": ".gitgnore",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\.gitgnore",
+              "RelativeDocumentMoniker": ".gitgnore",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\.gitgnore",
+              "RelativeToolTip": ".gitgnore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-30T12:16:50.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_CreateAccount.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs",
-              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs [Design]",
-              "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_CreateAccount.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\thico\\Source\\Repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\.gitignore",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\.gitignore",
+              "ToolTip": "C:\\Users\\thico\\Source\\Repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\.gitignore",
+              "RelativeToolTip": "ProjetoBancoDeDados\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-30T12:15:17.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_Login.cs [Design]",
+              "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T19:23:58.288Z",
+              "WhenOpened": "2024-10-30T11:55:53.545Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -61,22 +86,36 @@
               "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
               "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
               "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T19:23:31.828Z",
+              "WhenOpened": "2024-10-28T13:28:07.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Frm_Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
-              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs",
-              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_Login.cs [Design]",
-              "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_Login.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\thico\\Source\\Repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\App.config",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\App.config",
+              "ToolTip": "C:\\Users\\thico\\Source\\Repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\App.config",
+              "RelativeToolTip": "ProjetoBancoDeDados\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-30T11:58:45.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginValidationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Queries\\LoginValidationRepo.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Queries\\LoginValidationRepo.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Queries\\LoginValidationRepo.cs",
+              "RelativeToolTip": "ProjetoBancoDeDados\\Queries\\LoginValidationRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T18:43:01.453Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-28T13:26:38.204Z",
+              "EditorCaption": ""
             }
           ]
         }

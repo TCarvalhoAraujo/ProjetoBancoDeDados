@@ -16,5 +16,21 @@ namespace ProjetoBancoDeDados
         {
             InitializeComponent();
         }
+
+        private void Btn_Login_Click(object sender, EventArgs e)
+        {
+            Frm_MainMenu f = new Frm_MainMenu();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Frm_Login f = new Frm_Login();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }

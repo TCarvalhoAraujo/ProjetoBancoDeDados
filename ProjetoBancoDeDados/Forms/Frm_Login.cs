@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ProjetoBancoDeDados.Queries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,17 +14,37 @@ namespace ProjetoBancoDeDados
 {
     public partial class Frm_Login : Form
     {
+        private LoginValidationRepo loginValidationRepo;
+
         public Frm_Login()
         {
             InitializeComponent();
+            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            loginValidationRepo = new LoginValidationRepo(connectionString);
         }
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            Frm_MainMenu f = new Frm_MainMenu();
-            this.Hide();
-            f.ShowDialog();
-            this.Close();
+            string email = Txt_LoginEmail.Text;
+            string password = Txt_LoginPassword.Text;
+
+            bool isPasswordValid = loginValidationRepo.ValidateLogin(email, password);
+
+            if (isPasswordValid)
+            {
+                Frm_MainMenu f = new Frm_MainMenu();
+                this.Hide();
+                f.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Incorret credentials! Verify your email or password", 
+                                "Invalid Credentials", 
+                                MessageBoxButtons.OK, 
+                                MessageBoxIcon.Error);
+            }
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

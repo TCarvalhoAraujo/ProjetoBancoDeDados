@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoBancoDeDados.UCs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,24 +16,12 @@ namespace ProjetoBancoDeDados
         public Frm_MainMenu()
         {
             InitializeComponent();
-        }
+            Frm_MainMenuInit_UC uC = new Frm_MainMenuInit_UC();
+            TabPage TB = new TabPage();
+            TB.Name = "Welcome";
+            TB.Text = "Welcome";
+            Tbc_Apps.TabPages.Add(TB);
 
-        private void createAccountToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_CreateAccount f = new Frm_CreateAccount();
-            f.ShowDialog();
-        }
-
-        private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Frm_Login f = new Frm_Login();
-            f.ShowDialog();
-        }
-
-        private void enterAsAdminToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_LoginAdmin f = new Frm_LoginAdmin();
-            f.ShowDialog();
         }
 
         private void myFilesToolStripMenuItem_Click(object sender, EventArgs e)

@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.Mnu_MainMenu = new System.Windows.Forms.MenuStrip();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.enterAsAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileExplorerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +46,6 @@
             // Mnu_MainMenu
             // 
             this.Mnu_MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loginToolStripMenuItem,
             this.fileExplorerToolStripMenuItem,
             this.myProfileToolStripMenuItem,
             this.getHelpToolStripMenuItem,
@@ -60,37 +55,6 @@
             this.Mnu_MainMenu.Size = new System.Drawing.Size(851, 24);
             this.Mnu_MainMenu.TabIndex = 0;
             this.Mnu_MainMenu.Text = "menuStrip1";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createAccountToolStripMenuItem,
-            this.loginToolStripMenuItem1,
-            this.enterAsAdminToolStripMenuItem});
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.loginToolStripMenuItem.Text = "Login";
-            // 
-            // createAccountToolStripMenuItem
-            // 
-            this.createAccountToolStripMenuItem.Name = "createAccountToolStripMenuItem";
-            this.createAccountToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.createAccountToolStripMenuItem.Text = "Create Account";
-            this.createAccountToolStripMenuItem.Click += new System.EventHandler(this.createAccountToolStripMenuItem_Click);
-            // 
-            // loginToolStripMenuItem1
-            // 
-            this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
-            this.loginToolStripMenuItem1.Text = "Login";
-            this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
-            // 
-            // enterAsAdminToolStripMenuItem
-            // 
-            this.enterAsAdminToolStripMenuItem.Name = "enterAsAdminToolStripMenuItem";
-            this.enterAsAdminToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.enterAsAdminToolStripMenuItem.Text = "Login as Admin";
-            this.enterAsAdminToolStripMenuItem.Click += new System.EventHandler(this.enterAsAdminToolStripMenuItem_Click);
             // 
             // fileExplorerToolStripMenuItem
             // 
@@ -136,21 +100,21 @@
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
             // 
             // browsePlansToolStripMenuItem
             // 
             this.browsePlansToolStripMenuItem.Name = "browsePlansToolStripMenuItem";
-            this.browsePlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browsePlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.browsePlansToolStripMenuItem.Text = "Browse Plans";
             this.browsePlansToolStripMenuItem.Click += new System.EventHandler(this.browsePlansToolStripMenuItem_Click);
             // 
             // notificationsToolStripMenuItem
             // 
             this.notificationsToolStripMenuItem.Name = "notificationsToolStripMenuItem";
-            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.notificationsToolStripMenuItem.Text = "Notifications";
             this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.notificationsToolStripMenuItem_Click);
             // 
@@ -199,15 +163,11 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip Mnu_MainMenu;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createAccountToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fileExplorerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem getHelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myFilesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enterAsAdminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exploreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shareListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;

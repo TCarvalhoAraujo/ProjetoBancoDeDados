@@ -39,12 +39,12 @@ namespace ProjetoBancoDeDados
             }
             else
             {
-                MessageBox.Show("Incorret credentials! Verify your email or password", 
-                                "Invalid Credentials", 
-                                MessageBoxButtons.OK, 
+                MessageBox.Show("Incorret credentials! Verify your email or password",
+                                "Invalid Credentials",
+                                MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

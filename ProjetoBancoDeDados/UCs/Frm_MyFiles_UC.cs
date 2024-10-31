@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoBancoDeDados.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace ProjetoBancoDeDados
         public Frm_MyFiles_UC()
         {
             InitializeComponent();
+        }
+
+        private void Btn_NewFile_Click(object sender, EventArgs e)
+        {
+            Frm_NewFile f = new Frm_NewFile();
+            f.ShowDialog();
+        }
+
+        private void Btn_UpdateFile_Click(object sender, EventArgs e)
+        {
+            Frm_EditFile f = new Frm_EditFile();
+            f.ShowDialog();
+        }
+
+        private void Btn_DeleteFile_Click(object sender, EventArgs e)
+        {
+            Frm_DeleteFile f = new Frm_DeleteFile();
+            f.ShowDialog();
         }
     }
 }

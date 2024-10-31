@@ -34,16 +34,6 @@ namespace ProjetoBancoDeDados
             Tbc_Apps.TabPages.Add(TB);
         }
 
-        private void exploreToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_NewFile_UC uC = new Frm_NewFile_UC();
-            TabPage TB = new TabPage();
-            TB.Name = "New File";
-            TB.Text = "New File";
-            TB.Controls.Add(uC);
-            Tbc_Apps.TabPages.Add(TB);
-        }
-
         private void shareListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_ShareList_UC uC = new Frm_ShareList_UC();

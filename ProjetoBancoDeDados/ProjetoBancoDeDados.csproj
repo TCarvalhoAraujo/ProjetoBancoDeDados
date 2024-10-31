@@ -99,6 +99,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Usuario.cs" />
+    <Compile Include="Forms\Frm_DeleteFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_DeleteFile.Designer.cs">
+      <DependentUpon>Frm_DeleteFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_EditFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EditFile.Designer.cs">
+      <DependentUpon>Frm_EditFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_NewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_NewFile.Designer.cs">
+      <DependentUpon>Frm_NewFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Queries\LoginValidationRepo.cs" />
     <Compile Include="UCs\Frm_BrowsePlans_UC.cs">
       <SubType>UserControl</SubType>
@@ -154,12 +172,6 @@
     <Compile Include="UCs\Frm_MyFiles_UC.Designer.cs">
       <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCs\Frm_NewFile_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCs\Frm_NewFile_UC.Designer.cs">
-      <DependentUpon>Frm_NewFile_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCs\Frm_Notifications_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +186,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Frm_DeleteFile.resx">
+      <DependentUpon>Frm_DeleteFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_EditFile.resx">
+      <DependentUpon>Frm_EditFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_NewFile.resx">
+      <DependentUpon>Frm_NewFile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_BrowsePlans_UC.resx">
       <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,9 +221,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_MyFiles_UC.resx">
       <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCs\Frm_NewFile_UC.resx">
-      <DependentUpon>Frm_NewFile_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_Notifications_UC.resx">
       <DependentUpon>Frm_Notifications_UC.cs</DependentUpon>

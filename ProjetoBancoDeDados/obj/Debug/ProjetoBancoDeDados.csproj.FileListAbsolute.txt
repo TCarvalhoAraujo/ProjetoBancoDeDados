@@ -24,7 +24,6 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_LoginAdmin.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_MainMenu.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_MyFiles_UC.resources
-C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_NewFile_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_Notifications_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_ShareList_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Properties.Resources.resources
@@ -66,3 +65,6 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoB.5C06A14A.Up2Date
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_NewFile.resources
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_EditFile.resources
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_DeleteFile.resources

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoBancoDeDados
+namespace ProjetoBancoDeDados.Forms
 {
-    public partial class Frm_NewFile_UC : UserControl
+    public partial class Frm_EditFile : Form
     {
-        public Frm_NewFile_UC()
+        public Frm_EditFile()
         {
             InitializeComponent();
+        }
+
+        private void Btn_UpdateFile_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

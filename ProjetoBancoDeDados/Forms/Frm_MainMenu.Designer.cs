@@ -31,7 +31,6 @@
             this.Mnu_MainMenu = new System.Windows.Forms.MenuStrip();
             this.fileExplorerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shareListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +59,6 @@
             // 
             this.fileExplorerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.myFilesToolStripMenuItem,
-            this.exploreToolStripMenuItem,
             this.shareListToolStripMenuItem});
             this.fileExplorerToolStripMenuItem.Name = "fileExplorerToolStripMenuItem";
             this.fileExplorerToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
@@ -72,13 +70,6 @@
             this.myFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.myFilesToolStripMenuItem.Text = "My Files";
             this.myFilesToolStripMenuItem.Click += new System.EventHandler(this.myFilesToolStripMenuItem_Click);
-            // 
-            // exploreToolStripMenuItem
-            // 
-            this.exploreToolStripMenuItem.Name = "exploreToolStripMenuItem";
-            this.exploreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exploreToolStripMenuItem.Text = "New File";
-            this.exploreToolStripMenuItem.Click += new System.EventHandler(this.exploreToolStripMenuItem_Click);
             // 
             // shareListToolStripMenuItem
             // 
@@ -168,7 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem getHelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myFilesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exploreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shareListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem browsePlansToolStripMenuItem;

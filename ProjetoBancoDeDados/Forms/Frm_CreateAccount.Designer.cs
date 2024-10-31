@@ -140,7 +140,9 @@
             // 
             // Btn_CreateAccount
             // 
-            this.Btn_CreateAccount.BackColor = System.Drawing.Color.SkyBlue;
+            this.Btn_CreateAccount.BackColor = System.Drawing.Color.LightBlue;
+            this.Btn_CreateAccount.FlatAppearance.BorderSize = 0;
+            this.Btn_CreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_CreateAccount.Location = new System.Drawing.Point(328, 258);
             this.Btn_CreateAccount.Name = "Btn_CreateAccount";
             this.Btn_CreateAccount.Size = new System.Drawing.Size(142, 38);

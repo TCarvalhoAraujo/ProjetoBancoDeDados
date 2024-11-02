@@ -19,8 +19,8 @@ namespace ProjetoBancoDeDados.Queries
         public bool ValidateLogin(String email, String password)
         {
             string query = "SELECT COUNT(1) FROM USUARIO WHERE " +
-                "EMAIL = @Email AND " +
-                "SENHA = @Senha";
+                           "EMAIL = @Email AND " +
+                           "SENHA = @Senha";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {

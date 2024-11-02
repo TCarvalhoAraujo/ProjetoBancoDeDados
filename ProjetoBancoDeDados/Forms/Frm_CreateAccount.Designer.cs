@@ -35,9 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Txt_Username = new System.Windows.Forms.TextBox();
+            this.Txt_Password = new System.Windows.Forms.TextBox();
+            this.Txt_Email = new System.Windows.Forms.TextBox();
             this.Btn_CreateAccount = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -117,26 +117,26 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Password";
             // 
-            // textBox2
+            // Txt_Username
             // 
-            this.textBox2.Location = new System.Drawing.Point(306, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 6;
+            this.Txt_Username.Location = new System.Drawing.Point(306, 43);
+            this.Txt_Username.Name = "Txt_Username";
+            this.Txt_Username.Size = new System.Drawing.Size(191, 20);
+            this.Txt_Username.TabIndex = 6;
             // 
-            // textBox3
+            // Txt_Password
             // 
-            this.textBox3.Location = new System.Drawing.Point(306, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 7;
+            this.Txt_Password.Location = new System.Drawing.Point(306, 211);
+            this.Txt_Password.Name = "Txt_Password";
+            this.Txt_Password.Size = new System.Drawing.Size(191, 20);
+            this.Txt_Password.TabIndex = 7;
             // 
-            // textBox4
+            // Txt_Email
             // 
-            this.textBox4.Location = new System.Drawing.Point(306, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 20);
-            this.textBox4.TabIndex = 8;
+            this.Txt_Email.Location = new System.Drawing.Point(306, 126);
+            this.Txt_Email.Name = "Txt_Email";
+            this.Txt_Email.Size = new System.Drawing.Size(191, 20);
+            this.Txt_Email.TabIndex = 8;
             // 
             // Btn_CreateAccount
             // 
@@ -183,9 +183,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Btn_CreateAccount);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Txt_Email);
+            this.Controls.Add(this.Txt_Password);
+            this.Controls.Add(this.Txt_Username);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -209,9 +209,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Txt_Username;
+        private System.Windows.Forms.TextBox Txt_Password;
+        private System.Windows.Forms.TextBox Txt_Email;
         private System.Windows.Forms.Button Btn_CreateAccount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;

@@ -67,14 +67,14 @@
             // myFilesToolStripMenuItem
             // 
             this.myFilesToolStripMenuItem.Name = "myFilesToolStripMenuItem";
-            this.myFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.myFilesToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.myFilesToolStripMenuItem.Text = "My Files";
             this.myFilesToolStripMenuItem.Click += new System.EventHandler(this.myFilesToolStripMenuItem_Click);
             // 
             // shareListToolStripMenuItem
             // 
             this.shareListToolStripMenuItem.Name = "shareListToolStripMenuItem";
-            this.shareListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shareListToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.shareListToolStripMenuItem.Text = "Share List";
             this.shareListToolStripMenuItem.Click += new System.EventHandler(this.shareListToolStripMenuItem_Click);
             // 
@@ -140,6 +140,7 @@
             this.ClientSize = new System.Drawing.Size(851, 579);
             this.Controls.Add(this.Tbc_Apps);
             this.Controls.Add(this.Mnu_MainMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.Mnu_MainMenu;
             this.Name = "Frm_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

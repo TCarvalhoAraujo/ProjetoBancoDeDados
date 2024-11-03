@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoBancoDeDados.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace ProjetoBancoDeDados
         public Frm_ShareList_UC()
         {
             InitializeComponent();
+        }
+
+        private void Btn_ShareFile_Click(object sender, EventArgs e)
+        {
+            Frm_ShareFile f = new Frm_ShareFile();
+            f.ShowDialog();
+
         }
     }
 }

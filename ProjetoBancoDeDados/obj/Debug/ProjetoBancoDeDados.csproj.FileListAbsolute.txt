@@ -68,3 +68,4 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_NewFile.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_EditFile.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_DeleteFile.resources
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_ShareFile.resources

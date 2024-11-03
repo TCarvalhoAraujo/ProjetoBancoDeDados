@@ -51,7 +51,7 @@
             this.exitToolStripMenuItem});
             this.Mnu_MainMenu.Location = new System.Drawing.Point(0, 0);
             this.Mnu_MainMenu.Name = "Mnu_MainMenu";
-            this.Mnu_MainMenu.Size = new System.Drawing.Size(851, 24);
+            this.Mnu_MainMenu.Size = new System.Drawing.Size(913, 24);
             this.Mnu_MainMenu.TabIndex = 0;
             this.Mnu_MainMenu.Text = "menuStrip1";
             // 
@@ -129,7 +129,7 @@
             this.Tbc_Apps.Location = new System.Drawing.Point(0, 24);
             this.Tbc_Apps.Name = "Tbc_Apps";
             this.Tbc_Apps.SelectedIndex = 0;
-            this.Tbc_Apps.Size = new System.Drawing.Size(851, 555);
+            this.Tbc_Apps.Size = new System.Drawing.Size(913, 526);
             this.Tbc_Apps.TabIndex = 1;
             // 
             // Frm_MainMenu
@@ -137,7 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(851, 579);
+            this.ClientSize = new System.Drawing.Size(913, 550);
             this.Controls.Add(this.Tbc_Apps);
             this.Controls.Add(this.Mnu_MainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

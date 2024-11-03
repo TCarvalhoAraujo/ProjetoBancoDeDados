@@ -117,6 +117,12 @@
     <Compile Include="Forms\Frm_NewFile.Designer.cs">
       <DependentUpon>Frm_NewFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Frm_ShareFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ShareFile.Designer.cs">
+      <DependentUpon>Frm_ShareFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Queries\CreateUserRepo.cs" />
     <Compile Include="Queries\LoginValidationRepo.cs" />
     <Compile Include="UCs\Frm_BrowsePlans_UC.cs">
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_NewFile.resx">
       <DependentUpon>Frm_NewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ShareFile.resx">
+      <DependentUpon>Frm_ShareFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_BrowsePlans_UC.resx">
       <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>

@@ -1,0 +1,19 @@
+
+
+1.Script de criação de conta de usuário
+
+INSERT INTO Usuarios (ID_USUARIO, Nome, Email, Senha, DataCriacao)
+VALUES (@ID_USUARIO, @Nome, @Email, @Senha, GETDATE())
+
+2.Script de Login de Usuário (Admin)
+
+SELECT COUNT(*)
+FROM Usuarios
+WHERE ID_USUARIO = @ID_USUARIO
+AND Senha = @Senha
+AND TipoUsuario = 'admin'
+
+3. Script de Criação de Arquivo
+
+INSERT INTO Arquivos (ID_ARQUIVO, ID_USUARIO, NomeArquivo, TipoArquivo, DataCriacao)
+VALUES (@ID_ARQUIVO, @ID_USUARIO, @NomeArquivo, @TipoArquivo, GETDATE())

@@ -8,11 +8,11 @@ namespace ProjetoBancoDeDados.Entity
 {
     internal class Usuario
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public DateTime JoinDate { get; set; }
-
+        public int User_Id { get; set; } //id usuario
+        public string Username { get; set; } //login
+        public string Password { get; set; } //senha
+        public string Email { get; set; } //email
+        public DateTime JoinDate { get; set; } //data ingresso
+        public int Institution_Id { get; set; } //id instituicao
     }
 }

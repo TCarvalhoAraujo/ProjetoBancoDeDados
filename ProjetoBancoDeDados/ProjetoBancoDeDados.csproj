@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Instituicao.cs" />
     <Compile Include="Entity\Usuario.cs" />
     <Compile Include="Forms\Frm_DeleteFile.cs">
       <SubType>Form</SubType>
@@ -123,8 +124,8 @@
     <Compile Include="Forms\Frm_ShareFile.Designer.cs">
       <DependentUpon>Frm_ShareFile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Queries\CreateUserRepo.cs" />
-    <Compile Include="Queries\LoginValidationRepo.cs" />
+    <Compile Include="Repository\CreateUserRepo.cs" />
+    <Compile Include="Repository\LoginValidationRepo.cs" />
     <Compile Include="UCs\Frm_BrowsePlans_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>

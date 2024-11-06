@@ -1,0 +1,41 @@
+
+SET @id_do_arquivo = 1;          
+SET @novo_nome = 'novo_nome';
+SET @novo_tipo = 'novo_tipo';
+SET @nova_permissao = 'nova_permissao';
+SET @novo_tamanho = 1024;        
+SET @nova_localizacao = 'nova_localizacao';
+SET @nova_url = 'nova_url';
+
+UPDATE ARQUIVO
+SET 
+    NOME = @novo_nome, 
+    TIPO = @novo_tipo, 
+    PERMISSAO_ACESSO = @nova_permissao,  
+    TAMANHO = @novo_tamanho, 
+    DATA_MODIFICACAO = CURRENT_DATE,  
+    LOCALIZACAO = @nova_localizacao,  
+    URL = @nova_url
+WHERE 
+    ID_ARQUIVO = @id_do_arquivo;
+
+SET @id_do_arquivo = 1;  
+
+DELETE FROM ARQUIVO
+WHERE ID_ARQUIVO = @id_do_arquivo;
+
+SET @id_do_usuario = 1; 
+
+SELECT 
+    ID_ARQUIVO, 
+    NOME, 
+    TIPO, 
+    PERMISSAO_ACESSO, 
+    TAMANHO, 
+    DATA_MODIFICACAO, 
+    LOCALIZACAO, 
+    URL 
+FROM 
+    ARQUIVO
+WHERE 
+    ID_USUARIO = @id_do_usuario;

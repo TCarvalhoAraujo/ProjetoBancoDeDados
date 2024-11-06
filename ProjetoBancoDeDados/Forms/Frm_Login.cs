@@ -28,7 +28,7 @@ namespace ProjetoBancoDeDados
             string email = Txt_LoginEmail.Text;
             string password = Txt_LoginPassword.Text;
 
-            bool isPasswordValid = loginValidationRepo.ValidateLogin(email, password);
+            bool isPasswordValid = loginValidationRepo.ValidateUserLogin(email, password);
 
             if (isPasswordValid)
             {

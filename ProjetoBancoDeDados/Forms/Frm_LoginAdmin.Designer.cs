@@ -37,7 +37,7 @@
             this.Btn_Login = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_LoginID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -138,12 +138,12 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Email";
             // 
-            // textBox1
+            // Txt_LoginID
             // 
-            this.textBox1.Location = new System.Drawing.Point(41, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 22;
+            this.Txt_LoginID.Location = new System.Drawing.Point(41, 231);
+            this.Txt_LoginID.Name = "Txt_LoginID";
+            this.Txt_LoginID.Size = new System.Drawing.Size(176, 20);
+            this.Txt_LoginID.TabIndex = 22;
             // 
             // label4
             // 
@@ -161,7 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 400);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txt_LoginID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label5);
@@ -193,7 +193,7 @@
         private System.Windows.Forms.Button Btn_Login;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_LoginID;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.Btn_Share = new System.Windows.Forms.Button();
-            this.Txt_LoginPassword = new System.Windows.Forms.TextBox();
-            this.Txt_LoginEmail = new System.Windows.Forms.TextBox();
+            this.Txt_ReceiverUsername = new System.Windows.Forms.TextBox();
+            this.Txt_FileID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -48,20 +48,21 @@
             this.Btn_Share.TabIndex = 4;
             this.Btn_Share.Text = "Share";
             this.Btn_Share.UseVisualStyleBackColor = false;
+            this.Btn_Share.Click += new System.EventHandler(this.Btn_Share_Click);
             // 
-            // Txt_LoginPassword
+            // Txt_ReceiverUsername
             // 
-            this.Txt_LoginPassword.Location = new System.Drawing.Point(31, 112);
-            this.Txt_LoginPassword.Name = "Txt_LoginPassword";
-            this.Txt_LoginPassword.Size = new System.Drawing.Size(176, 20);
-            this.Txt_LoginPassword.TabIndex = 9;
+            this.Txt_ReceiverUsername.Location = new System.Drawing.Point(31, 112);
+            this.Txt_ReceiverUsername.Name = "Txt_ReceiverUsername";
+            this.Txt_ReceiverUsername.Size = new System.Drawing.Size(176, 20);
+            this.Txt_ReceiverUsername.TabIndex = 9;
             // 
-            // Txt_LoginEmail
+            // Txt_FileID
             // 
-            this.Txt_LoginEmail.Location = new System.Drawing.Point(30, 52);
-            this.Txt_LoginEmail.Name = "Txt_LoginEmail";
-            this.Txt_LoginEmail.Size = new System.Drawing.Size(176, 20);
-            this.Txt_LoginEmail.TabIndex = 8;
+            this.Txt_FileID.Location = new System.Drawing.Point(30, 52);
+            this.Txt_FileID.Name = "Txt_FileID";
+            this.Txt_FileID.Size = new System.Drawing.Size(176, 20);
+            this.Txt_FileID.TabIndex = 8;
             // 
             // label3
             // 
@@ -91,8 +92,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(245, 249);
-            this.Controls.Add(this.Txt_LoginPassword);
-            this.Controls.Add(this.Txt_LoginEmail);
+            this.Controls.Add(this.Txt_ReceiverUsername);
+            this.Controls.Add(this.Txt_FileID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Btn_Share);
@@ -107,8 +108,8 @@
         #endregion
 
         private System.Windows.Forms.Button Btn_Share;
-        private System.Windows.Forms.TextBox Txt_LoginPassword;
-        private System.Windows.Forms.TextBox Txt_LoginEmail;
+        private System.Windows.Forms.TextBox Txt_ReceiverUsername;
+        private System.Windows.Forms.TextBox Txt_FileID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
     }

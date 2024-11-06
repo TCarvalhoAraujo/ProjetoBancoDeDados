@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(644, 95);
+            this.panel1.Size = new System.Drawing.Size(929, 95);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -70,10 +70,11 @@
             this.Btn_GetHelp.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_GetHelp.Location = new System.Drawing.Point(419, 113);
             this.Btn_GetHelp.Name = "Btn_GetHelp";
-            this.Btn_GetHelp.Size = new System.Drawing.Size(189, 62);
+            this.Btn_GetHelp.Size = new System.Drawing.Size(474, 62);
             this.Btn_GetHelp.TabIndex = 1;
             this.Btn_GetHelp.Text = "Send Help Request";
             this.Btn_GetHelp.UseVisualStyleBackColor = false;
+            this.Btn_GetHelp.Click += new System.EventHandler(this.Btn_GetHelp_Click);
             // 
             // label2
             // 
@@ -114,7 +115,7 @@
             this.textBox2.Location = new System.Drawing.Point(18, 190);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(590, 244);
+            this.textBox2.Size = new System.Drawing.Size(875, 244);
             this.textBox2.TabIndex = 6;
             // 
             // label4
@@ -152,7 +153,7 @@
             this.Controls.Add(this.Btn_GetHelp);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_GetHelp_UC";
-            this.Size = new System.Drawing.Size(644, 457);
+            this.Size = new System.Drawing.Size(929, 559);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

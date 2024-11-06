@@ -14,12 +14,12 @@ namespace ProjetoBancoDeDados
 {
     public partial class Frm_CreateAccount : Form
     {
-        private CreateUserRepo createUserRepo;
+        private UserRepo createUserRepo;
         public Frm_CreateAccount()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
-            createUserRepo = new CreateUserRepo(connectionString);
+            createUserRepo = new UserRepo(connectionString);
         }
 
         private void Btn_CreateAccount_Click(object sender, EventArgs e)
@@ -33,9 +33,9 @@ namespace ProjetoBancoDeDados
             }
             else
             {
-                Entity.Usuario usuario = createUserRepo.CreateUser(Txt_Username.Text, Txt_Email.Text, Txt_Password.Text);
+                bool sucessfulAccountCreation = createUserRepo.CreateUser(Txt_Username.Text, Txt_Email.Text, Txt_Password.Text);
 
-                if (usuario == null)
+                if (sucessfulAccountCreation == false)
                 {
                     MessageBox.Show("Username or Email are already in use!",
                                         "Error while creating account!",
@@ -49,7 +49,7 @@ namespace ProjetoBancoDeDados
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
 
-                    Frm_MainMenu f = new Frm_MainMenu();
+                    Frm_Login f = new Frm_Login();
                     this.Hide();
                     f.ShowDialog();
                     this.Close();

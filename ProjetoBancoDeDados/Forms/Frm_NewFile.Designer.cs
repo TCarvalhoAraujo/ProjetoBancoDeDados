@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.Rdb_Java = new System.Windows.Forms.RadioButton();
-            this.Rdb_Public = new System.Windows.Forms.RadioButton();
-            this.Rdb_Content = new System.Windows.Forms.RadioButton();
             this.Rdb_Py = new System.Windows.Forms.RadioButton();
             this.Rdb_Cs = new System.Windows.Forms.RadioButton();
             this.Rdb_Go = new System.Windows.Forms.RadioButton();
@@ -42,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_Content = new System.Windows.Forms.TextBox();
             this.Btn_NewFile = new System.Windows.Forms.Button();
+            this.Txt_Permissao = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Rdb_Java
@@ -55,30 +54,7 @@
             this.Rdb_Java.TabStop = true;
             this.Rdb_Java.Text = ".java";
             this.Rdb_Java.UseVisualStyleBackColor = true;
-            // 
-            // Rdb_Public
-            // 
-            this.Rdb_Public.AutoSize = true;
-            this.Rdb_Public.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rdb_Public.Location = new System.Drawing.Point(141, 87);
-            this.Rdb_Public.Name = "Rdb_Public";
-            this.Rdb_Public.Size = new System.Drawing.Size(55, 20);
-            this.Rdb_Public.TabIndex = 42;
-            this.Rdb_Public.TabStop = true;
-            this.Rdb_Public.Text = "public";
-            this.Rdb_Public.UseVisualStyleBackColor = true;
-            // 
-            // Rdb_Content
-            // 
-            this.Rdb_Content.AutoSize = true;
-            this.Rdb_Content.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rdb_Content.Location = new System.Drawing.Point(202, 87);
-            this.Rdb_Content.Name = "Rdb_Content";
-            this.Rdb_Content.Size = new System.Drawing.Size(59, 20);
-            this.Rdb_Content.TabIndex = 41;
-            this.Rdb_Content.TabStop = true;
-            this.Rdb_Content.Text = "private";
-            this.Rdb_Content.UseVisualStyleBackColor = true;
+            this.Rdb_Java.CheckedChanged += new System.EventHandler(this.Rdb_Java_CheckedChanged);
             // 
             // Rdb_Py
             // 
@@ -91,6 +67,7 @@
             this.Rdb_Py.TabStop = true;
             this.Rdb_Py.Text = ".py";
             this.Rdb_Py.UseVisualStyleBackColor = true;
+            this.Rdb_Py.CheckedChanged += new System.EventHandler(this.Rdb_Py_CheckedChanged);
             // 
             // Rdb_Cs
             // 
@@ -103,6 +80,7 @@
             this.Rdb_Cs.TabStop = true;
             this.Rdb_Cs.Text = ".cs";
             this.Rdb_Cs.UseVisualStyleBackColor = true;
+            this.Rdb_Cs.CheckedChanged += new System.EventHandler(this.Rdb_Cs_CheckedChanged);
             // 
             // Rdb_Go
             // 
@@ -115,6 +93,7 @@
             this.Rdb_Go.TabStop = true;
             this.Rdb_Go.Text = ".go";
             this.Rdb_Go.UseVisualStyleBackColor = true;
+            this.Rdb_Go.CheckedChanged += new System.EventHandler(this.Rdb_Go_CheckedChanged);
             // 
             // Rdb_Txt
             // 
@@ -127,6 +106,7 @@
             this.Rdb_Txt.TabStop = true;
             this.Rdb_Txt.Text = ".txt";
             this.Rdb_Txt.UseVisualStyleBackColor = true;
+            this.Rdb_Txt.CheckedChanged += new System.EventHandler(this.Rdb_Txt_CheckedChanged);
             // 
             // Txt_Title
             // 
@@ -201,15 +181,23 @@
             this.Btn_NewFile.UseVisualStyleBackColor = false;
             this.Btn_NewFile.Click += new System.EventHandler(this.Btn_NewFile_Click);
             // 
+            // Txt_Permissao
+            // 
+            this.Txt_Permissao.BackColor = System.Drawing.Color.Azure;
+            this.Txt_Permissao.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Permissao.Location = new System.Drawing.Point(135, 87);
+            this.Txt_Permissao.Name = "Txt_Permissao";
+            this.Txt_Permissao.Size = new System.Drawing.Size(79, 22);
+            this.Txt_Permissao.TabIndex = 44;
+            // 
             // Frm_NewFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(713, 536);
+            this.Controls.Add(this.Txt_Permissao);
             this.Controls.Add(this.Rdb_Java);
-            this.Controls.Add(this.Rdb_Public);
-            this.Controls.Add(this.Rdb_Content);
             this.Controls.Add(this.Rdb_Py);
             this.Controls.Add(this.Rdb_Cs);
             this.Controls.Add(this.Rdb_Go);
@@ -221,7 +209,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_Content);
             this.Controls.Add(this.Btn_NewFile);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_NewFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frm_NewFile";
@@ -233,8 +221,6 @@
         #endregion
 
         private System.Windows.Forms.RadioButton Rdb_Java;
-        private System.Windows.Forms.RadioButton Rdb_Public;
-        private System.Windows.Forms.RadioButton Rdb_Content;
         private System.Windows.Forms.RadioButton Rdb_Py;
         private System.Windows.Forms.RadioButton Rdb_Cs;
         private System.Windows.Forms.RadioButton Rdb_Go;
@@ -246,5 +232,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Txt_Content;
         private System.Windows.Forms.Button Btn_NewFile;
+        private System.Windows.Forms.TextBox Txt_Permissao;
     }
 }

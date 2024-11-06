@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoBancoDeDados.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace ProjetoBancoDeDados.UCs
         public Frm_MainMenuInit_UC()
         {
             InitializeComponent();
+            Lbl_Welcome.Text = "Welcome back, " + UserSession.Username + "!";
         }
     }
 }

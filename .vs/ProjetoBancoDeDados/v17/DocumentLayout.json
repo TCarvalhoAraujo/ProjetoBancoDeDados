@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|c:\\users\\thico\\source\\repos\\tcarvalhoaraujo\\projetobancodedados\\projetobancodedados\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\ucs\\frm_gethelp_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\ucs\\frm_gethelp_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\ucs\\frm_gethelp_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\ucs\\frm_gethelp_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\repository\\filerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\repository\\filerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\ucs\\frm_myfiles_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\ucs\\frm_myfiles_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\projetobancodedados\\forms\\frm_editfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C23C67-8513-483D-8AD8-18AECFC59485}|ProjetoBancoDeDados\\ProjetoBancoDeDados.csproj|solutionrelative:projetobancodedados\\forms\\frm_editfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Entity\\Usuario.cs",
-              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Entity\\Usuario.cs",
-              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Entity\\Usuario.cs",
-              "RelativeToolTip": "ProjetoBancoDeDados\\Entity\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FileRepo.cs",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Repository\\FileRepo.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Repository\\FileRepo.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Repository\\FileRepo.cs",
+              "RelativeToolTip": "ProjetoBancoDeDados\\Repository\\FileRepo.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwKQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T23:18:41.073Z",
+              "WhenOpened": "2024-11-04T14:49:12.579Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_MyFiles_UC.cs",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_MyFiles_UC.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\UCs\\Frm_MyFiles_UC.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_MyFiles_UC.cs",
+              "RelativeToolTip": "ProjetoBancoDeDados\\UCs\\Frm_MyFiles_UC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:16:39.112Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_EditFile.cs",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_EditFile.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\Forms\\Frm_EditFile.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\Forms\\Frm_EditFile.cs",
+              "RelativeToolTip": "ProjetoBancoDeDados\\Forms\\Frm_EditFile.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:12:17.778Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frm_GetHelp_UC.cs",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "RelativeToolTip": "ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T02:04:14.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frm_GetHelp_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "RelativeDocumentMoniker": "ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs",
+              "ToolTip": "C:\\Users\\thico\\source\\repos\\TCarvalhoAraujo\\ProjetoBancoDeDados\\ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs [Design]",
+              "RelativeToolTip": "ProjetoBancoDeDados\\UCs\\Frm_GetHelp_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T02:02:25.665Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace ProjetoBancoDeDados.Entity
 {
-    internal class Usuario
+    public static class UserSession
     {
-        public int User_Id { get; set; } //id usuario
-        public string Username { get; set; } //login
-        public string Password { get; set; } //senha
-        public string Email { get; set; } //email
-        public DateTime JoinDate { get; set; } //data ingresso
-        public int Institution_Id { get; set; } //id instituicao
+        public static int User_Id { get; set; } //id usuario
+        public static string Username { get; set; } //login
+        public static string Password { get; set; } //senha
+        public static string Email { get; set; } //email 
+        public static DateTime JoinDate { get; set; } //data ingresso
+        public static int Institution_Id { get; set; } //id instituicao
+        public static string InstitutionName { get; set; } //nome instituicao
     }
 }

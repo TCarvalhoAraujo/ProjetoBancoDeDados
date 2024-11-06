@@ -34,7 +34,6 @@
             this.Txt_Username = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_UserID = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@
             this.Txt_Email = new System.Windows.Forms.TextBox();
             this.Txt_Password = new System.Windows.Forms.TextBox();
             this.Txt_JoinDate = new System.Windows.Forms.TextBox();
-            this.Txt_Plan = new System.Windows.Forms.TextBox();
             this.Txt_Institution = new System.Windows.Forms.TextBox();
             this.Btn_EditProfile = new System.Windows.Forms.Button();
             this.Btn_SaveChanges = new System.Windows.Forms.Button();
@@ -57,6 +55,7 @@
             this.Txt_FilesUpdated = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,14 +68,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 79);
+            this.panel1.Size = new System.Drawing.Size(929, 79);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 25);
+            this.label1.Location = new System.Drawing.Point(387, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 28);
             this.label1.TabIndex = 0;
@@ -99,7 +98,7 @@
             this.Txt_Username.Location = new System.Drawing.Point(103, 13);
             this.Txt_Username.Name = "Txt_Username";
             this.Txt_Username.ReadOnly = true;
-            this.Txt_Username.Size = new System.Drawing.Size(206, 21);
+            this.Txt_Username.Size = new System.Drawing.Size(264, 21);
             this.Txt_Username.TabIndex = 5;
             // 
             // label2
@@ -121,16 +120,6 @@
             this.Txt_UserID.ReadOnly = true;
             this.Txt_UserID.Size = new System.Drawing.Size(36, 21);
             this.Txt_UserID.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 22);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "My Plan:";
             // 
             // label4
             // 
@@ -179,7 +168,7 @@
             this.Txt_Email.Location = new System.Drawing.Point(75, 95);
             this.Txt_Email.Name = "Txt_Email";
             this.Txt_Email.ReadOnly = true;
-            this.Txt_Email.Size = new System.Drawing.Size(234, 21);
+            this.Txt_Email.Size = new System.Drawing.Size(292, 21);
             this.Txt_Email.TabIndex = 13;
             // 
             // Txt_Password
@@ -189,7 +178,7 @@
             this.Txt_Password.Location = new System.Drawing.Point(103, 131);
             this.Txt_Password.Name = "Txt_Password";
             this.Txt_Password.ReadOnly = true;
-            this.Txt_Password.Size = new System.Drawing.Size(206, 21);
+            this.Txt_Password.Size = new System.Drawing.Size(264, 21);
             this.Txt_Password.TabIndex = 14;
             // 
             // Txt_JoinDate
@@ -199,18 +188,8 @@
             this.Txt_JoinDate.Location = new System.Drawing.Point(236, 54);
             this.Txt_JoinDate.Name = "Txt_JoinDate";
             this.Txt_JoinDate.ReadOnly = true;
-            this.Txt_JoinDate.Size = new System.Drawing.Size(73, 21);
+            this.Txt_JoinDate.Size = new System.Drawing.Size(131, 21);
             this.Txt_JoinDate.TabIndex = 15;
-            // 
-            // Txt_Plan
-            // 
-            this.Txt_Plan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Txt_Plan.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Plan.Location = new System.Drawing.Point(93, 199);
-            this.Txt_Plan.Name = "Txt_Plan";
-            this.Txt_Plan.ReadOnly = true;
-            this.Txt_Plan.Size = new System.Drawing.Size(216, 21);
-            this.Txt_Plan.TabIndex = 16;
             // 
             // Txt_Institution
             // 
@@ -219,7 +198,7 @@
             this.Txt_Institution.Location = new System.Drawing.Point(140, 165);
             this.Txt_Institution.Name = "Txt_Institution";
             this.Txt_Institution.ReadOnly = true;
-            this.Txt_Institution.Size = new System.Drawing.Size(169, 21);
+            this.Txt_Institution.Size = new System.Drawing.Size(227, 21);
             this.Txt_Institution.TabIndex = 17;
             // 
             // Btn_EditProfile
@@ -230,9 +209,9 @@
             this.Btn_EditProfile.FlatAppearance.BorderSize = 0;
             this.Btn_EditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_EditProfile.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_EditProfile.Location = new System.Drawing.Point(16, 236);
+            this.Btn_EditProfile.Location = new System.Drawing.Point(16, 205);
             this.Btn_EditProfile.Name = "Btn_EditProfile";
-            this.Btn_EditProfile.Size = new System.Drawing.Size(128, 39);
+            this.Btn_EditProfile.Size = new System.Drawing.Size(161, 39);
             this.Btn_EditProfile.TabIndex = 19;
             this.Btn_EditProfile.Text = "Edit Profile";
             this.Btn_EditProfile.UseVisualStyleBackColor = false;
@@ -246,9 +225,9 @@
             this.Btn_SaveChanges.FlatAppearance.BorderSize = 0;
             this.Btn_SaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_SaveChanges.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_SaveChanges.Location = new System.Drawing.Point(177, 236);
+            this.Btn_SaveChanges.Location = new System.Drawing.Point(208, 205);
             this.Btn_SaveChanges.Name = "Btn_SaveChanges";
-            this.Btn_SaveChanges.Size = new System.Drawing.Size(128, 39);
+            this.Btn_SaveChanges.Size = new System.Drawing.Size(159, 39);
             this.Btn_SaveChanges.TabIndex = 20;
             this.Btn_SaveChanges.Text = "Save Changes";
             this.Btn_SaveChanges.UseVisualStyleBackColor = false;
@@ -258,7 +237,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(415, 97);
+            this.label9.Location = new System.Drawing.Point(571, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 22);
             this.label9.TabIndex = 21;
@@ -355,7 +334,7 @@
             this.panel2.Controls.Add(this.Txt_Comments);
             this.panel2.Controls.Add(this.Txt_FilesShared);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(398, 137);
+            this.panel2.Location = new System.Drawing.Point(554, 198);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 164);
             this.panel2.TabIndex = 30;
@@ -366,7 +345,6 @@
             this.panel3.Controls.Add(this.Btn_SaveChanges);
             this.panel3.Controls.Add(this.Btn_EditProfile);
             this.panel3.Controls.Add(this.Txt_Institution);
-            this.panel3.Controls.Add(this.Txt_Plan);
             this.panel3.Controls.Add(this.Txt_JoinDate);
             this.panel3.Controls.Add(this.Txt_Password);
             this.panel3.Controls.Add(this.Txt_Email);
@@ -374,27 +352,37 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.Txt_UserID);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.Txt_Username);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(12, 98);
+            this.panel3.Location = new System.Drawing.Point(67, 153);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(334, 298);
+            this.panel3.Size = new System.Drawing.Size(392, 273);
             this.panel3.TabIndex = 31;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(81, 113);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(134, 22);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "My Information:";
             // 
             // Frm_EditProfile_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_EditProfile_UC";
-            this.Size = new System.Drawing.Size(709, 437);
+            this.Size = new System.Drawing.Size(929, 559);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -414,7 +402,6 @@
         private System.Windows.Forms.TextBox Txt_Username;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Txt_UserID;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -422,7 +409,6 @@
         private System.Windows.Forms.TextBox Txt_Email;
         private System.Windows.Forms.TextBox Txt_Password;
         private System.Windows.Forms.TextBox Txt_JoinDate;
-        private System.Windows.Forms.TextBox Txt_Plan;
         private System.Windows.Forms.TextBox Txt_Institution;
         private System.Windows.Forms.Button Btn_EditProfile;
         private System.Windows.Forms.Button Btn_SaveChanges;
@@ -437,5 +423,6 @@
         private System.Windows.Forms.TextBox Txt_FilesUpdated;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label14;
     }
 }

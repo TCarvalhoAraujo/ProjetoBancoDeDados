@@ -34,8 +34,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Dgv_SharedFiles = new System.Windows.Forms.DataGridView();
+            this.Dgv_ReceivedFiles = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_SharedFiles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ReceivedFiles)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,6 +82,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Azure;
+            this.panel2.Controls.Add(this.Dgv_SharedFiles);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 97);
@@ -107,10 +112,31 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Received Files ";
             // 
+            // Dgv_SharedFiles
+            // 
+            this.Dgv_SharedFiles.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.Dgv_SharedFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_SharedFiles.GridColor = System.Drawing.Color.Azure;
+            this.Dgv_SharedFiles.Location = new System.Drawing.Point(41, 119);
+            this.Dgv_SharedFiles.Name = "Dgv_SharedFiles";
+            this.Dgv_SharedFiles.Size = new System.Drawing.Size(365, 239);
+            this.Dgv_SharedFiles.TabIndex = 3;
+            // 
+            // Dgv_ReceivedFiles
+            // 
+            this.Dgv_ReceivedFiles.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.Dgv_ReceivedFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ReceivedFiles.GridColor = System.Drawing.Color.Azure;
+            this.Dgv_ReceivedFiles.Location = new System.Drawing.Point(500, 216);
+            this.Dgv_ReceivedFiles.Name = "Dgv_ReceivedFiles";
+            this.Dgv_ReceivedFiles.Size = new System.Drawing.Size(365, 239);
+            this.Dgv_ReceivedFiles.TabIndex = 4;
+            // 
             // Frm_ShareList_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Dgv_ReceivedFiles);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -120,6 +146,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_SharedFiles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ReceivedFiles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +161,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Btn_ShareFile;
+        private System.Windows.Forms.DataGridView Dgv_SharedFiles;
+        private System.Windows.Forms.DataGridView Dgv_ReceivedFiles;
     }
 }

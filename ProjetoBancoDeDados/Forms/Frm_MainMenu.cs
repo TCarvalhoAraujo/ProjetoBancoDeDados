@@ -88,5 +88,15 @@ namespace ProjetoBancoDeDados
         {
             Application.Exit();
         }
+
+        private void institutionFilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_InstitutionFiles uC = new Frm_InstitutionFiles();
+            TabPage TB = new TabPage();
+            TB.Name = "Institution Fies";
+            TB.Text = "Institution Fies";
+            TB.Controls.Add(uC);
+            Tbc_Apps.TabPages.Add(TB);
+        }
     }
 }

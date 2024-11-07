@@ -99,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Arquivo.cs" />
-    <Compile Include="Entity\Instituicao.cs" />
     <Compile Include="Entity\Usuario.cs" />
     <Compile Include="Forms\Frm_DeleteFile.cs">
       <SubType>Form</SubType>
@@ -124,6 +123,12 @@
     </Compile>
     <Compile Include="Forms\Frm_ShareFile.Designer.cs">
       <DependentUpon>Frm_ShareFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_OpenInstitution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_OpenInstitution.Designer.cs">
+      <DependentUpon>Frm_OpenInstitution.cs</DependentUpon>
     </Compile>
     <Compile Include="Repository\UserRepo.cs" />
     <Compile Include="Repository\FileRepo.cs" />
@@ -171,6 +176,12 @@
     <Compile Include="Forms\Frm_MainMenu.Designer.cs">
       <DependentUpon>Frm_MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCs\Frm_InstitutionFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\Frm_InstitutionFiles.Designer.cs">
+      <DependentUpon>Frm_InstitutionFiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCs\Frm_MainMenuInit_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +217,9 @@
     <EmbeddedResource Include="Forms\Frm_NewFile.resx">
       <DependentUpon>Frm_NewFile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_OpenInstitution.resx">
+      <DependentUpon>Frm_OpenInstitution.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_ShareFile.resx">
       <DependentUpon>Frm_ShareFile.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_MainMenu.resx">
       <DependentUpon>Frm_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\Frm_InstitutionFiles.resx">
+      <DependentUpon>Frm_InstitutionFiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_MainMenuInit_UC.resx">
       <DependentUpon>Frm_MainMenuInit_UC.cs</DependentUpon>

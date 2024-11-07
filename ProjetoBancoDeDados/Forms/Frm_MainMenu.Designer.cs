@@ -39,6 +39,7 @@
             this.getHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Apps = new System.Windows.Forms.TabControl();
+            this.institutionFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mnu_MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             // 
             this.fileExplorerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.myFilesToolStripMenuItem,
-            this.shareListToolStripMenuItem});
+            this.shareListToolStripMenuItem,
+            this.institutionFilesToolStripMenuItem});
             this.fileExplorerToolStripMenuItem.Name = "fileExplorerToolStripMenuItem";
             this.fileExplorerToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.fileExplorerToolStripMenuItem.Text = "File Explorer";
@@ -67,14 +69,14 @@
             // myFilesToolStripMenuItem
             // 
             this.myFilesToolStripMenuItem.Name = "myFilesToolStripMenuItem";
-            this.myFilesToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.myFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.myFilesToolStripMenuItem.Text = "My Files";
             this.myFilesToolStripMenuItem.Click += new System.EventHandler(this.myFilesToolStripMenuItem_Click);
             // 
             // shareListToolStripMenuItem
             // 
             this.shareListToolStripMenuItem.Name = "shareListToolStripMenuItem";
-            this.shareListToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.shareListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.shareListToolStripMenuItem.Text = "Share List";
             this.shareListToolStripMenuItem.Click += new System.EventHandler(this.shareListToolStripMenuItem_Click);
             // 
@@ -91,21 +93,21 @@
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
             // 
             // browsePlansToolStripMenuItem
             // 
             this.browsePlansToolStripMenuItem.Name = "browsePlansToolStripMenuItem";
-            this.browsePlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.browsePlansToolStripMenuItem.Text = "Browse Plans";
+            this.browsePlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browsePlansToolStripMenuItem.Text = "My Institution";
             this.browsePlansToolStripMenuItem.Click += new System.EventHandler(this.browsePlansToolStripMenuItem_Click);
             // 
             // notificationsToolStripMenuItem
             // 
             this.notificationsToolStripMenuItem.Name = "notificationsToolStripMenuItem";
-            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.notificationsToolStripMenuItem.Text = "Notifications";
             this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.notificationsToolStripMenuItem_Click);
             // 
@@ -131,6 +133,13 @@
             this.Tbc_Apps.SelectedIndex = 0;
             this.Tbc_Apps.Size = new System.Drawing.Size(913, 526);
             this.Tbc_Apps.TabIndex = 1;
+            // 
+            // institutionFilesToolStripMenuItem
+            // 
+            this.institutionFilesToolStripMenuItem.Name = "institutionFilesToolStripMenuItem";
+            this.institutionFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.institutionFilesToolStripMenuItem.Text = "Institution Files";
+            this.institutionFilesToolStripMenuItem.Click += new System.EventHandler(this.institutionFilesToolStripMenuItem_Click);
             // 
             // Frm_MainMenu
             // 
@@ -165,6 +174,7 @@
         private System.Windows.Forms.ToolStripMenuItem browsePlansToolStripMenuItem;
         private System.Windows.Forms.TabControl Tbc_Apps;
         private System.Windows.Forms.ToolStripMenuItem notificationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem institutionFilesToolStripMenuItem;
     }
 }
 

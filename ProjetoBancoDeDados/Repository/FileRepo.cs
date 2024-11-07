@@ -172,5 +172,78 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
+
+        public DataTable GetInstitutionFiles()
+        {
+            string query = "SELECT I.NOME AS NOME_INSTITUICAO, A.ID_ARQUIVO, A.NOME AS NOME_ARQUIVO, " +
+                   "U.LOGIN AS USUARIO, A.PERMISSAO_ACESSO, " +
+                   "A.DATA_MODIFICACAO, A.URL " +
+                   "FROM ARQUIVO A " +
+                   "LEFT JOIN USUARIO U ON A.ID_USUARIO = U.ID_USUARIO " +
+                   "LEFT JOIN INSTITUICAO I ON I.ID_INSTITUICAO = U.ID_INSTITUICAO " +
+                   "WHERE U.ID_INSTITUICAO = @ID_INSTITUICAO";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID_INSTITUICAO", UserSession.Institution_Id);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        DataTable institutionFilesTable = new DataTable();
+                        adapter.Fill(institutionFilesTable);
+                        return institutionFilesTable;
+                    }
+                }
+            }
+        }
+
+        public Arquivo OpenInstitutionFile(String nome)
+        {
+            string query = "SELECT ID_ARQUIVO, ID_USUARIO, NOME, TIPO, PERMISSAO_ACESSO, " +
+                           "DATA_MODIFICACAO, TAMANHO, LOCALIZACAO, URL, CONTEUDO " +
+                           "FROM ARQUIVO WHERE " +
+                           "ID_USUARIO = @ID_USUARIO AND " +
+                           "NOME = @NOME";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@NOME", nome);
+                    command.Parameters.AddWithValue("@ID_USUARIO", UserSession.User_Id);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Arquivo arquivo = new Arquivo();
+
+                            arquivo.File_ID = reader.GetInt32("ID_ARQUIVO");
+                            arquivo.Name = reader.GetString("NOME");
+                            arquivo.User_ID = reader.GetInt32("ID_USUARIO");
+                            arquivo.Tipo = reader.GetString("TIPO");
+                            arquivo.Permisssao = reader.GetString("PERMISSAO_ACESSO");
+                            arquivo.Data_Modificacao = reader.GetDateTime("DATA_MODIFICACAO");
+                            arquivo.Tamanho = reader.GetDouble("TAMANHO");
+                            arquivo.Localizacao = reader.GetString("LOCALIZACAO");
+                            arquivo.URL = reader.GetString("URL");
+                            arquivo.Conteudo = reader.GetString("CONTEUDO");
+
+                            return arquivo;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

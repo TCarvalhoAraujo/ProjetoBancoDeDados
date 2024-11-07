@@ -14,6 +14,7 @@ namespace ProjetoBancoDeDados
 {
     public partial class Frm_CreateAccount : Form
     {
+        private int id_instituicao;
         private UserRepo createUserRepo;
         public Frm_CreateAccount()
         {
@@ -33,7 +34,7 @@ namespace ProjetoBancoDeDados
             }
             else
             {
-                bool sucessfulAccountCreation = createUserRepo.CreateUser(Txt_Username.Text, Txt_Email.Text, Txt_Password.Text);
+                bool sucessfulAccountCreation = createUserRepo.CreateUser(Txt_Username.Text, Txt_Email.Text, Txt_Password.Text, id_instituicao);
 
                 if (sucessfulAccountCreation == false)
                 {
@@ -64,6 +65,21 @@ namespace ProjetoBancoDeDados
             this.Hide();
             f.ShowDialog();
             this.Close();
+        }
+
+        private void Rdb_1_CheckedChanged(object sender, EventArgs e)
+        {
+            id_instituicao = 1;
+        }
+
+        private void Rdb_2_CheckedChanged(object sender, EventArgs e)
+        {
+            id_instituicao = 2;
+        }
+
+        private void Rdb_3_CheckedChanged(object sender, EventArgs e)
+        {
+            id_instituicao = 3;
         }
     }
 }

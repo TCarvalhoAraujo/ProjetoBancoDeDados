@@ -15,5 +15,6 @@ namespace ProjetoBancoDeDados.Entity
         public static DateTime JoinDate { get; set; } //data ingresso
         public static int Institution_Id { get; set; } //id instituicao
         public static string InstitutionName { get; set; } //nome instituicao
+        public static string Role { get; set; } //role do usuario (admin, empresa...)
     }
 }

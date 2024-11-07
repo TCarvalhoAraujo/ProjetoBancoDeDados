@@ -173,6 +173,7 @@
             this.Txt_URL.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_URL.Location = new System.Drawing.Point(78, 60);
             this.Txt_URL.Name = "Txt_URL";
+            this.Txt_URL.ReadOnly = true;
             this.Txt_URL.Size = new System.Drawing.Size(289, 22);
             this.Txt_URL.TabIndex = 34;
             // 
@@ -182,6 +183,7 @@
             this.Txt_FileID.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_FileID.Location = new System.Drawing.Point(462, 22);
             this.Txt_FileID.Name = "Txt_FileID";
+            this.Txt_FileID.ReadOnly = true;
             this.Txt_FileID.Size = new System.Drawing.Size(52, 22);
             this.Txt_FileID.TabIndex = 36;
             // 
@@ -201,6 +203,7 @@
             this.Txt_UserID.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_UserID.Location = new System.Drawing.Point(462, 59);
             this.Txt_UserID.Name = "Txt_UserID";
+            this.Txt_UserID.ReadOnly = true;
             this.Txt_UserID.Size = new System.Drawing.Size(52, 22);
             this.Txt_UserID.TabIndex = 38;
             // 
@@ -220,6 +223,7 @@
             this.Txt_Size.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Size.Location = new System.Drawing.Point(462, 94);
             this.Txt_Size.Name = "Txt_Size";
+            this.Txt_Size.ReadOnly = true;
             this.Txt_Size.Size = new System.Drawing.Size(52, 22);
             this.Txt_Size.TabIndex = 40;
             // 
@@ -249,6 +253,7 @@
             this.Txt_Date.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Date.Location = new System.Drawing.Point(268, 124);
             this.Txt_Date.Name = "Txt_Date";
+            this.Txt_Date.ReadOnly = true;
             this.Txt_Date.Size = new System.Drawing.Size(99, 22);
             this.Txt_Date.TabIndex = 42;
             // 
@@ -302,7 +307,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_EditFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Frm_EditFile";
+            this.Text = "Edit File";
             this.ResumeLayout(false);
             this.PerformLayout();
 

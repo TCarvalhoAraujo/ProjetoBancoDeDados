@@ -1,4 +1,5 @@
-﻿using ProjetoBancoDeDados.Queries;
+﻿using ProjetoBancoDeDados.Entity;
+using ProjetoBancoDeDados.Queries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,7 @@ namespace ProjetoBancoDeDados
 
             if (isPasswordValid)
             {
+                UserSession.Role = "PapelUsuario";
                 Frm_MainMenu f = new Frm_MainMenu();
                 this.Hide();
                 f.ShowDialog();

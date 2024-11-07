@@ -115,7 +115,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_DeleteFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Frm_DeleteFile";
+            this.Text = "Delete File";
             this.ResumeLayout(false);
             this.PerformLayout();
 

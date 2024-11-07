@@ -41,6 +41,10 @@
             this.Btn_CreateAccount = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Rdb_1 = new System.Windows.Forms.RadioButton();
+            this.Rdb_2 = new System.Windows.Forms.RadioButton();
+            this.Rdb_3 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +105,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(302, 101);
+            this.label6.Location = new System.Drawing.Point(302, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 22);
             this.label6.TabIndex = 3;
@@ -111,7 +115,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(302, 186);
+            this.label7.Location = new System.Drawing.Point(302, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 22);
             this.label7.TabIndex = 4;
@@ -126,14 +130,14 @@
             // 
             // Txt_Password
             // 
-            this.Txt_Password.Location = new System.Drawing.Point(306, 211);
+            this.Txt_Password.Location = new System.Drawing.Point(306, 153);
             this.Txt_Password.Name = "Txt_Password";
             this.Txt_Password.Size = new System.Drawing.Size(191, 20);
             this.Txt_Password.TabIndex = 7;
             // 
             // Txt_Email
             // 
-            this.Txt_Email.Location = new System.Drawing.Point(306, 126);
+            this.Txt_Email.Location = new System.Drawing.Point(306, 98);
             this.Txt_Email.Name = "Txt_Email";
             this.Txt_Email.Size = new System.Drawing.Size(191, 20);
             this.Txt_Email.TabIndex = 8;
@@ -175,11 +179,64 @@
             this.linkLabel1.Text = "Login";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(302, 186);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 22);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Institution";
+            // 
+            // Rdb_1
+            // 
+            this.Rdb_1.AutoSize = true;
+            this.Rdb_1.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rdb_1.Location = new System.Drawing.Point(306, 224);
+            this.Rdb_1.Name = "Rdb_1";
+            this.Rdb_1.Size = new System.Drawing.Size(42, 20);
+            this.Rdb_1.TabIndex = 13;
+            this.Rdb_1.TabStop = true;
+            this.Rdb_1.Text = "Itau";
+            this.Rdb_1.UseVisualStyleBackColor = true;
+            this.Rdb_1.CheckedChanged += new System.EventHandler(this.Rdb_1_CheckedChanged);
+            // 
+            // Rdb_2
+            // 
+            this.Rdb_2.AutoSize = true;
+            this.Rdb_2.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rdb_2.Location = new System.Drawing.Point(354, 224);
+            this.Rdb_2.Name = "Rdb_2";
+            this.Rdb_2.Size = new System.Drawing.Size(59, 20);
+            this.Rdb_2.TabIndex = 14;
+            this.Rdb_2.TabStop = true;
+            this.Rdb_2.Text = "Unicap";
+            this.Rdb_2.UseVisualStyleBackColor = true;
+            this.Rdb_2.CheckedChanged += new System.EventHandler(this.Rdb_2_CheckedChanged);
+            // 
+            // Rdb_3
+            // 
+            this.Rdb_3.AutoSize = true;
+            this.Rdb_3.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rdb_3.Location = new System.Drawing.Point(419, 224);
+            this.Rdb_3.Name = "Rdb_3";
+            this.Rdb_3.Size = new System.Drawing.Size(71, 20);
+            this.Rdb_3.TabIndex = 15;
+            this.Rdb_3.TabStop = true;
+            this.Rdb_3.Text = "Bradesco";
+            this.Rdb_3.UseVisualStyleBackColor = true;
+            this.Rdb_3.CheckedChanged += new System.EventHandler(this.Rdb_3_CheckedChanged);
+            // 
             // Frm_CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 370);
+            this.Controls.Add(this.Rdb_3);
+            this.Controls.Add(this.Rdb_2);
+            this.Controls.Add(this.Rdb_1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Btn_CreateAccount);
@@ -215,5 +272,9 @@
         private System.Windows.Forms.Button Btn_CreateAccount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton Rdb_1;
+        private System.Windows.Forms.RadioButton Rdb_2;
+        private System.Windows.Forms.RadioButton Rdb_3;
     }
 }

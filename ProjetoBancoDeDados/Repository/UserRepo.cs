@@ -18,14 +18,14 @@ namespace ProjetoBancoDeDados.Queries
             this.connectionString = connectionString;
         }
 
-        public bool CreateUser(String username, String email, String password)
+        public bool CreateUser(String username, String email, String password, int instituicao)
         {
             string verifyQuery = "SELECT COUNT(*) FROM USUARIO " +
                                  "WHERE LOGIN = @LOGIN " +
                                  "AND EMAIL = @EMAIL";
 
-            string insertQuery = "INSERT INTO USUARIO (LOGIN, SENHA, EMAIL, DATA_INGRESSO)" +
-                                 "VALUES (@LOGIN, @SENHA, @EMAIL, @DATA_INGRESSO)";
+            string insertQuery = "INSERT INTO USUARIO (LOGIN, SENHA, EMAIL, DATA_INGRESSO, ID_INSTITUICAO)" +
+                                 "VALUES (@LOGIN, @SENHA, @EMAIL, @DATA_INGRESSO, @ID_INSTITUICAO)";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -49,6 +49,7 @@ namespace ProjetoBancoDeDados.Queries
                     insertCommand.Parameters.AddWithValue("@SENHA", password);
                     insertCommand.Parameters.AddWithValue("@EMAIL", email);
                     insertCommand.Parameters.AddWithValue("@DATA_INGRESSO", DateTime.Now);
+                    insertCommand.Parameters.AddWithValue("@ID_INSTITUICAO", instituicao);
 
                     int rowsAffected = insertCommand.ExecuteNonQuery();
 

@@ -35,8 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_FileID = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Cbx_AvailableSupport = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +52,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(185, 33);
+            this.label1.Location = new System.Drawing.Point(338, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 26);
             this.label1.TabIndex = 0;
@@ -68,9 +66,9 @@
             this.Btn_GetHelp.FlatAppearance.BorderSize = 0;
             this.Btn_GetHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_GetHelp.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_GetHelp.Location = new System.Drawing.Point(419, 113);
+            this.Btn_GetHelp.Location = new System.Drawing.Point(671, 113);
             this.Btn_GetHelp.Name = "Btn_GetHelp";
-            this.Btn_GetHelp.Size = new System.Drawing.Size(474, 62);
+            this.Btn_GetHelp.Size = new System.Drawing.Size(222, 62);
             this.Btn_GetHelp.TabIndex = 1;
             this.Btn_GetHelp.Text = "Send Help Request";
             this.Btn_GetHelp.UseVisualStyleBackColor = false;
@@ -115,37 +113,14 @@
             this.textBox2.Location = new System.Drawing.Point(18, 190);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(875, 244);
+            this.textBox2.Size = new System.Drawing.Size(875, 311);
             this.textBox2.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(225, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 22);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Available Support:";
-            // 
-            // Cbx_AvailableSupport
-            // 
-            this.Cbx_AvailableSupport.BackColor = System.Drawing.Color.Azure;
-            this.Cbx_AvailableSupport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cbx_AvailableSupport.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cbx_AvailableSupport.FormattingEnabled = true;
-            this.Cbx_AvailableSupport.Location = new System.Drawing.Point(226, 146);
-            this.Cbx_AvailableSupport.Name = "Cbx_AvailableSupport";
-            this.Cbx_AvailableSupport.Size = new System.Drawing.Size(146, 29);
-            this.Cbx_AvailableSupport.TabIndex = 8;
             // 
             // Frm_GetHelp_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.Cbx_AvailableSupport);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Txt_FileID);
             this.Controls.Add(this.label3);
@@ -170,7 +145,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Txt_FileID;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox Cbx_AvailableSupport;
     }
 }

@@ -25,7 +25,23 @@ namespace ProjetoBancoDeDados
 
         private void Btn_GetHelp_Click(object sender, EventArgs e)
         {
-            bool isGetHelpValid = userRepo.Gethelp();
+            Random rng = new Random();
+            int id_admin = rng.Next(1, 4);
+            bool isGetHelpValid = userRepo.Gethelp(Convert.ToInt32(Txt_FileID.Text), id_admin, Txt_Descricao.Text);
+            if (isGetHelpValid == false)
+            {
+                MessageBox.Show("Couldn't send help request",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Successfully sent help request. Wait for the return",
+                                "Success",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
         }
     }
 }

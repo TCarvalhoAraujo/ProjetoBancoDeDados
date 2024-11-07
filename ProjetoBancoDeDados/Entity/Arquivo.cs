@@ -18,5 +18,7 @@ namespace ProjetoBancoDeDados.Entity
         public string Localizacao { get; set; }
         public string URL { get; set; }
         public string Conteudo { get; set; }
+
+        public string Usuario { get; set; }
     }
 }

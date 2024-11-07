@@ -40,6 +40,7 @@ namespace ProjetoBancoDeDados.Forms
             Txt_UserID.Text = Convert.ToString(arquivo.User_ID);
             Txt_Size.Text = Convert.ToString(arquivo.Tamanho);
             Txt_Location.Text = arquivo.Localizacao;
+            Txt_Username.Text = arquivo.Usuario;
         }
     }
 }

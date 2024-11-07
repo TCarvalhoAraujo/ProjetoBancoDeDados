@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_FileID = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txt_Descricao = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,24 +104,24 @@
             this.Txt_FileID.Size = new System.Drawing.Size(34, 21);
             this.Txt_FileID.TabIndex = 4;
             // 
-            // textBox2
+            // Txt_Descricao
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Txt_Descricao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.Azure;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(18, 190);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(875, 311);
-            this.textBox2.TabIndex = 6;
+            this.Txt_Descricao.BackColor = System.Drawing.Color.Azure;
+            this.Txt_Descricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txt_Descricao.Location = new System.Drawing.Point(18, 190);
+            this.Txt_Descricao.Multiline = true;
+            this.Txt_Descricao.Name = "Txt_Descricao";
+            this.Txt_Descricao.Size = new System.Drawing.Size(875, 311);
+            this.Txt_Descricao.TabIndex = 6;
             // 
             // Frm_GetHelp_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Txt_Descricao);
             this.Controls.Add(this.Txt_FileID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -144,6 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Txt_FileID;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txt_Descricao;
     }
 }

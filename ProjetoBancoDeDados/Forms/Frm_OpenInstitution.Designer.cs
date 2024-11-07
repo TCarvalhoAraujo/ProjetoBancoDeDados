@@ -267,7 +267,7 @@
             // 
             this.Txt_Username.BackColor = System.Drawing.Color.Azure;
             this.Txt_Username.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Username.Location = new System.Drawing.Point(515, 105);
+            this.Txt_Username.Location = new System.Drawing.Point(515, 103);
             this.Txt_Username.Name = "Txt_Username";
             this.Txt_Username.ReadOnly = true;
             this.Txt_Username.Size = new System.Drawing.Size(164, 22);
@@ -303,7 +303,7 @@
             this.Controls.Add(this.Txt_Content);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_OpenInstitution";
-            this.Text = "Open File";
+            this.Text = "Institution File";
             this.ResumeLayout(false);
             this.PerformLayout();
 

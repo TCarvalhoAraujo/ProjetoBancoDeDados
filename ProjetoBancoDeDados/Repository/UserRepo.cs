@@ -2,6 +2,7 @@
 using ProjetoBancoDeDados.Entity;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,9 +84,28 @@ namespace ProjetoBancoDeDados.Queries
             }
         }
 
-        public bool Gethelp()
+        public bool Gethelp(int id_arquivo, int id_admin, String descricao)
         {
-            return true;
+            string query = "INSERT INTO SUPORTE (ID_ARQUIVO, ID_USUARIO, ID_ADMIN, DESCRICAO_SUPORTE, DATA_PEDIDO) " +
+                           "VALUES (@ID_ARQUIVO, @ID_USUARIO, @ID_ADMIN, @DESCRICAO_SUPORTE, @DATA_PEDIDO)";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open(); 
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID_ARQUIVO", id_arquivo);
+                    command.Parameters.AddWithValue("@ID_USUARIO", UserSession.User_Id);
+                    command.Parameters.AddWithValue("@ID_ADMIN", id_admin);
+                    command.Parameters.AddWithValue("@DESCRICAO_SUPORTE", descricao);
+                    command.Parameters.AddWithValue("@DATA_PEDIDO", DateTime.Now);
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    return rowsAffected > 0;
+                }
+            }
         }
     }
 }

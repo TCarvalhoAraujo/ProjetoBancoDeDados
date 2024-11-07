@@ -65,7 +65,8 @@ namespace ProjetoBancoDeDados.Forms
 
         private void Btn_HistoryVersion_Click(object sender, EventArgs e)
         {
-
+            Frm_VersionHistory f = new Frm_VersionHistory(Convert.ToInt32(Txt_FileID.Text));
+            f.ShowDialog();
         }
     }
 }

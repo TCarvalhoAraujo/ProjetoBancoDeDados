@@ -203,11 +203,11 @@ namespace ProjetoBancoDeDados.Repository
 
         public Arquivo OpenInstitutionFile(String nome)
         {
-            string query = "SELECT ID_ARQUIVO, ID_USUARIO, NOME, TIPO, PERMISSAO_ACESSO, " +
-                           "DATA_MODIFICACAO, TAMANHO, LOCALIZACAO, URL, CONTEUDO " +
-                           "FROM ARQUIVO WHERE " +
-                           "ID_USUARIO = @ID_USUARIO AND " +
-                           "NOME = @NOME";
+            string query = "SELECT A.ID_ARQUIVO, A.ID_USUARIO, A.NOME, A.TIPO, A.PERMISSAO_ACESSO, " +
+                           "A.DATA_MODIFICACAO, A.TAMANHO, A.LOCALIZACAO, A.URL, A.CONTEUDO, U.LOGIN " +
+                           "FROM ARQUIVO A " +
+                           "LEFT JOIN USUARIO U ON U.ID_USUARIO = A.ID_USUARIO " +
+                           "WHERE A.NOME = @NOME";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -216,7 +216,6 @@ namespace ProjetoBancoDeDados.Repository
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@NOME", nome);
-                    command.Parameters.AddWithValue("@ID_USUARIO", UserSession.User_Id);
 
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
@@ -234,6 +233,7 @@ namespace ProjetoBancoDeDados.Repository
                             arquivo.Localizacao = reader.GetString("LOCALIZACAO");
                             arquivo.URL = reader.GetString("URL");
                             arquivo.Conteudo = reader.GetString("CONTEUDO");
+                            arquivo.Usuario = reader.GetString("LOGIN");
 
                             return arquivo;
                         }
@@ -241,6 +241,71 @@ namespace ProjetoBancoDeDados.Repository
                         {
                             return null;
                         }
+                    }
+                }
+            }
+        }
+
+        public HistoricoVersionamento GetCurrentVersion(int id)
+        {
+            string query = "SELECT H.ID_HISTORICO, A.NOME, H.OPERACAO, H.DATA_VERSIONAMENTO " +
+                           "FROM HISTORICO_VERSIONAMENTO H " +
+                           "LEFT JOIN ARQUIVO A ON A.ID_ARQUIVO = H.ID_ARQUIVO " +
+                           "WHERE H.ID_ARQUIVO = @ID_ARQUIVO AND " +
+                           "(SELECT MAX(ID_HISTORICO) FROM HISTORICO_VERSIONAMENTO " +
+                           "WHERE ID_ARQUIVO = @ID_ARQUIVO)";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID_ARQUIVO", id);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            HistoricoVersionamento historico = new HistoricoVersionamento();
+
+                            historico.Id = reader.GetInt32("ID_HISTORICO");
+                            historico.Nome = reader.GetString("NOME");
+                            historico.Data = reader.GetDateTime("DATA_VERSIONAMENTO");
+                            historico.Operacao = reader.GetString("OPERACAO");
+
+                            return historico;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+        }
+
+        public DataTable GetAllVersions(int id)
+        {
+            string query = "SELECT H.ID_HISTORICO AS VERSAO, " +
+                           "H.OPERACAO, H.CONTEUDO, H.DATA_VERSIONAMENTO " +
+                           "FROM HISTORICO_VERSIONAMENTO H " +
+                           "LEFT JOIN ARQUIVO A ON A.ID_ARQUIVO = H.ID_ARQUIVO " +
+                           "WHERE H.ID_ARQUIVO = @ID_ARQUIVO;";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ID_ARQUIVO", id);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        DataTable historyVersionTable = new DataTable();
+                        adapter.Fill(historyVersionTable);
+                        return historyVersionTable;
                     }
                 }
             }

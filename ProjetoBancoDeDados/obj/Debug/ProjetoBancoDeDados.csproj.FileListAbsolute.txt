@@ -71,3 +71,4 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_ShareFile.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.UCs.Frm_InstitutionFiles.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_OpenInstitution.resources
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_VersionHistory.resources

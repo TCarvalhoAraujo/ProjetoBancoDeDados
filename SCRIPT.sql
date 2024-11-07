@@ -1,4 +1,3 @@
-/* ⁠script para pedir suporte a um admi */
 SELECT
 	S.ID_SUPORTE,
     S.DESCRICAO_SUPORTE,
@@ -7,6 +6,11 @@ FROM SUPORTE S
 	INNER JOIN ADMINISTRADOR AD ON S.ID_ADMIN = AD.ID_ADMIN
     INNER JOIN USUARIO U ON S.ID_USUARIO = U.ID_USUARIO
     WHERE S.ID_USUARIO = @ID_USUARIO;
+
+
+/* ⁠script para pedir suporte a um admi */
+INSERT INTO SUPORTE (ID_ARQUIVO, ID_USUARIO, ID_ADMIN, DESCRICAO_SUPORTE)
+VALUES (@ID_ARQUIVO, @ID_USUARIO, @ID_ADMIN, @DESCRICAO_SUPORTE);
     
 /* script para mostrar os dados de um usuário */
 SELECT

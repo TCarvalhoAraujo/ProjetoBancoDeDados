@@ -1,0 +1,9 @@
+DELIMITER $$
+
+CREATE PROCEDURE AtualizarAtividadeRecente()
+BEGIN
+	UPDATE ATIVIDADE_RECENTES
+    set ULTIMA_VERSAO = curdate();
+END $$
+
+DELIMITER ;

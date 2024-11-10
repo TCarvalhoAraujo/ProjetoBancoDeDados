@@ -2,11 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/71fb98ad-e892-4f57-8f4b-3b947df29f84)
 
-# Descrição 
+## Descrição 
 
 Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte de um trabalho acadêmico da disciplina de Banco de Dados da UNICAP que aborda a criação e manipulação de um banco de dados relacional. O objetivo principal do projeto foi a aplicação prática de conceitos de modelagem de dados, normalização e a execução de operações em SQL, com o propósito de demonstrar a construção de um sistema de banco de dados eficiente e funcional.
 
-# Grupo
+## Grupo
 - Maria Clara Soares
 - Pedro Filipe Macedo
 - Marco Antônio Arcoverde

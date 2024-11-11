@@ -19,6 +19,25 @@ namespace ProjetoBancoDeDados.Queries
             this.connectionString = connectionString;
         }
 
+        public bool validateUsername(String username)
+        {
+            string query = "SELECT COUNT(*) FROM USUARIO " +
+                           "WHERE LOGIN = @LOGIN";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (MySqlCommand verify = new MySqlCommand(query, connection))
+                {
+                    verify.Parameters.AddWithValue("@LOGIN", username);
+
+                    int count = Convert.ToInt32(verify.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+        }
+
         public bool ValidateUserLogin(String email, String password)
         {
             string verifyQuery = "SELECT COUNT(*) FROM ADMINISTRADOR " +
@@ -84,7 +103,7 @@ namespace ProjetoBancoDeDados.Queries
                                  "AND ID_ADMIN = @ID_ADMIN";
 
             string query = "SELECT ID_ADMIN, ID_INSTITUICAO, LOGIN, EMAIL, SENHA, DATA_INGRESSO " +
-                           "FROM USUARIO WHERE " +
+                           "FROM ADMINISTRADOR WHERE " +
                            "EMAIL = @EMAIL AND " +
                            "SENHA = @SENHA AND " +
                            "ID_ADMIN = @ID_ADMIN";
@@ -116,8 +135,8 @@ namespace ProjetoBancoDeDados.Queries
                     {
                         if (reader.Read())
                         {
-                            UserSession.User_Id = reader.GetInt32("ID_ADMIN");
-                            //UserSession.Institution_Id = reader.GetInt32("ID_INSTITUICAO");
+                            UserSession.Admin_Id = reader.GetInt32("ID_ADMIN");
+                            UserSession.Institution_Id = reader.GetInt32("ID_INSTITUICAO");
                             UserSession.Username = reader.GetString("LOGIN");
                             UserSession.Email = reader.GetString("EMAIL");
                             UserSession.Password = reader.GetString("SENHA");
@@ -130,8 +149,8 @@ namespace ProjetoBancoDeDados.Queries
                         }
                     }
                 }
-
             }
         }
     }
 }
+ 

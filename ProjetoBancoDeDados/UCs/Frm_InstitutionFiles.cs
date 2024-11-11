@@ -17,11 +17,13 @@ namespace ProjetoBancoDeDados.UCs
     public partial class Frm_InstitutionFiles : UserControl
     {
         private FileRepo fileRepo;
+        private FileValidationRepo fileValidationRepo;
         public Frm_InstitutionFiles()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
             fileRepo = new FileRepo(connectionString);
+            fileValidationRepo = new FileValidationRepo(connectionString);
             LoadInstitutionFiles();
         }
 
@@ -43,8 +45,48 @@ namespace ProjetoBancoDeDados.UCs
             }
             else
             {
-                Frm_OpenInstitution f = new Frm_OpenInstitution(txt_SearchFileByName.Text);
-                f.ShowDialog();
+                bool isNameValid = fileValidationRepo.verifyByName(txt_SearchFileByName.Text);
+                if (isNameValid)
+                {
+                    Frm_OpenInstitution f = new Frm_OpenInstitution(txt_SearchFileByName.Text);
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No Files Found!",
+                                    "Error",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
+                }
+            }
+            this.Refresh();
+            LoadInstitutionFiles();
+        }
+
+        private void Btn_Comment_Click(object sender, EventArgs e)
+        {
+            if (txt_SearchFileByName.Text == "")
+            {
+                MessageBox.Show("Enter the file name you want to add a comment",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+            else
+            {
+                bool isNameValid = fileValidationRepo.verifyByName(txt_SearchFileByName.Text);
+                if (isNameValid)
+                {
+                    Frm_Comment f = new Frm_Comment(txt_SearchFileByName.Text);
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No Files Found!",
+                                    "Error",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
+                }
             }
             this.Refresh();
             LoadInstitutionFiles();

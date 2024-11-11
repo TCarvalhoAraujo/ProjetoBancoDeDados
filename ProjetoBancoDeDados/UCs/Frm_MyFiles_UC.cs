@@ -1,4 +1,5 @@
-﻿using ProjetoBancoDeDados.Forms;
+﻿using ProjetoBancoDeDados.Entity;
+using ProjetoBancoDeDados.Forms;
 using ProjetoBancoDeDados.Repository;
 using System;
 using System.Collections.Generic;
@@ -16,19 +17,28 @@ namespace ProjetoBancoDeDados
     public partial class Frm_MyFiles_UC : UserControl
     {
         private FileRepo fileRepo;
+        private FileValidationRepo fileValidationRepo;
         public Frm_MyFiles_UC()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
             fileRepo = new FileRepo(connectionString);
+            fileValidationRepo = new FileValidationRepo(connectionString);
             LoadMyFiles();
         }
 
         private void LoadMyFiles()
         {
-            DataTable myFiles = fileRepo.GetMyFiles();
-
-            Dgv_MyFiles.DataSource = myFiles;
+            if (UserSession.Role == "Usuario")
+            {
+                DataTable myFiles = fileRepo.GetMyFiles();
+                Dgv_MyFiles.DataSource = myFiles;
+            }
+            else
+            {
+                DataTable myFiles = fileRepo.GetAllFiles();
+                Dgv_MyFiles.DataSource = myFiles;
+            }
         }
 
         private void Btn_NewFile_Click(object sender, EventArgs e)
@@ -50,8 +60,20 @@ namespace ProjetoBancoDeDados
             }
             else
             {
-                Frm_EditFile f = new Frm_EditFile(txt_SearchFileByName.Text);
-                f.ShowDialog();
+                bool isNameValid = fileValidationRepo.verifyByNameAndUser(txt_SearchFileByName.Text);
+                if (isNameValid == true)
+                {
+                    Frm_EditFile f = new Frm_EditFile(txt_SearchFileByName.Text);
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No Files Found!",
+                                    "Error",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Error);
+                }
+
             }
             this.Refresh();
             LoadMyFiles();
@@ -59,18 +81,8 @@ namespace ProjetoBancoDeDados
 
         private void Btn_DeleteFile_Click(object sender, EventArgs e)
         {
-            if (txt_SearchFileByName.Text == "")
-            {
-                MessageBox.Show("Enter the file name you want to delete",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-            }
-            else
-            {
-                Frm_DeleteFile f = new Frm_DeleteFile(txt_SearchFileByName.Text);
-                f.ShowDialog();
-            }
+            Frm_DeleteFile f = new Frm_DeleteFile();
+            f.ShowDialog();
             this.Refresh();
             LoadMyFiles();
         }

@@ -15,7 +15,7 @@ namespace ProjetoBancoDeDados.Forms
 {
     public partial class Frm_NewFile : Form
     {
-        string tipo;
+        string tipo = "";
         private FileRepo fileRepo;
         public Frm_NewFile()
         {
@@ -26,7 +26,7 @@ namespace ProjetoBancoDeDados.Forms
 
         private void Btn_NewFile_Click(object sender, EventArgs e)
         {
-            if (Txt_Title.Text == "")
+            if (Txt_Title.Text == "" || Txt_Permissao.Text == "" || tipo == "")
             {
                 MessageBox.Show("Missing fields!",
                                 "Please fill out the title and check the boxes",

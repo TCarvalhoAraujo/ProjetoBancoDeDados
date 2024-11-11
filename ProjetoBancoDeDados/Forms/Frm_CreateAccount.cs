@@ -27,8 +27,8 @@ namespace ProjetoBancoDeDados
         {
             if(Txt_Username.Text == "" ||  Txt_Password.Text == "" || Txt_Email.Text == "")
             {
-                MessageBox.Show("Missing fields!",
-                                "You have to fill out every field!",
+                MessageBox.Show("You have to fill out every field!",
+                                "Error",
                                 MessageBoxButtons.OK, 
                                 MessageBoxIcon.Error);
             }
@@ -39,16 +39,16 @@ namespace ProjetoBancoDeDados
                 if (sucessfulAccountCreation == false)
                 {
                     MessageBox.Show("Username or Email are already in use!",
-                                        "Error while creating account!",
-                                        MessageBoxButtons.OK,
-                                        MessageBoxIcon.Error);
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Sucess!",
-                                "Your user has been created successfully",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                    MessageBox.Show("Your user has been created successfully!",
+                                    "Success",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
 
                     Frm_Login f = new Frm_Login();
                     this.Hide();

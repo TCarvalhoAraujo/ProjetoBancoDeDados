@@ -100,7 +100,14 @@
   <ItemGroup>
     <Compile Include="Entity\Arquivo.cs" />
     <Compile Include="Entity\HistoricoVersionamento.cs" />
+    <Compile Include="Entity\Instituicao.cs" />
     <Compile Include="Entity\Usuario.cs" />
+    <Compile Include="Forms\Frm_Comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Comment.Designer.cs">
+      <DependentUpon>Frm_Comment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_DeleteFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,16 +144,11 @@
     <Compile Include="Forms\Frm_VersionHistory.Designer.cs">
       <DependentUpon>Frm_VersionHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Repository\FileValidationRepo.cs" />
     <Compile Include="Repository\UserRepo.cs" />
     <Compile Include="Repository\FileRepo.cs" />
     <Compile Include="Repository\LoginValidationRepo.cs" />
     <Compile Include="Repository\ShareFileRepo.cs" />
-    <Compile Include="UCs\Frm_BrowsePlans_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCs\Frm_BrowsePlans_UC.Designer.cs">
-      <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Frm_CreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,12 +203,6 @@
     <Compile Include="UCs\Frm_MyFiles_UC.Designer.cs">
       <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCs\Frm_Notifications_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCs\Frm_Notifications_UC.Designer.cs">
-      <DependentUpon>Frm_Notifications_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCs\Frm_ShareList_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +211,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Frm_Comment.resx">
+      <DependentUpon>Frm_Comment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_DeleteFile.resx">
       <DependentUpon>Frm_DeleteFile.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,9 +231,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_VersionHistory.resx">
       <DependentUpon>Frm_VersionHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCs\Frm_BrowsePlans_UC.resx">
-      <DependentUpon>Frm_BrowsePlans_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_CreateAccount.resx">
       <DependentUpon>Frm_CreateAccount.cs</DependentUpon>
@@ -262,9 +258,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_MyFiles_UC.resx">
       <DependentUpon>Frm_MyFiles_UC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCs\Frm_Notifications_UC.resx">
-      <DependentUpon>Frm_Notifications_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\Frm_ShareList_UC.resx">
       <DependentUpon>Frm_ShareList_UC.cs</DependentUpon>

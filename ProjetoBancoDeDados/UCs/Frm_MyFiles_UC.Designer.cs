@@ -80,7 +80,7 @@
             this.Btn_DeleteFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Btn_DeleteFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_DeleteFile.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Btn_DeleteFile.Location = new System.Drawing.Point(771, 18);
+            this.Btn_DeleteFile.Location = new System.Drawing.Point(744, 18);
             this.Btn_DeleteFile.Name = "Btn_DeleteFile";
             this.Btn_DeleteFile.Size = new System.Drawing.Size(131, 44);
             this.Btn_DeleteFile.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.Btn_OpenFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Btn_OpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_OpenFile.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Btn_OpenFile.Location = new System.Drawing.Point(621, 18);
+            this.Btn_OpenFile.Location = new System.Drawing.Point(597, 18);
             this.Btn_OpenFile.Name = "Btn_OpenFile";
             this.Btn_OpenFile.Size = new System.Drawing.Size(131, 44);
             this.Btn_OpenFile.TabIndex = 2;
@@ -108,7 +108,7 @@
             this.Btn_NewFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Btn_NewFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_NewFile.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Btn_NewFile.Location = new System.Drawing.Point(471, 18);
+            this.Btn_NewFile.Location = new System.Drawing.Point(447, 18);
             this.Btn_NewFile.Name = "Btn_NewFile";
             this.Btn_NewFile.Size = new System.Drawing.Size(131, 44);
             this.Btn_NewFile.TabIndex = 0;
@@ -122,6 +122,7 @@
             this.Dgv_MyFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_MyFiles.Location = new System.Drawing.Point(19, 112);
             this.Dgv_MyFiles.Name = "Dgv_MyFiles";
+            this.Dgv_MyFiles.RowHeadersWidth = 45;
             this.Dgv_MyFiles.Size = new System.Drawing.Size(856, 384);
             this.Dgv_MyFiles.TabIndex = 1;
             // 

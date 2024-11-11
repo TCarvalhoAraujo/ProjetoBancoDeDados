@@ -33,7 +33,7 @@ namespace ProjetoBancoDeDados
 
             if (isPasswordValid)
             {
-                UserSession.Role = "PapelUsuario";
+                UserSession.Role = "Usuario";
                 Frm_MainMenu f = new Frm_MainMenu();
                 this.Hide();
                 f.ShowDialog();

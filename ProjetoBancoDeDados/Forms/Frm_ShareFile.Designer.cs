@@ -99,6 +99,7 @@
             this.Controls.Add(this.Btn_Share);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_ShareFile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Share File";
             this.ResumeLayout(false);
             this.PerformLayout();

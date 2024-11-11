@@ -31,7 +31,14 @@ namespace ProjetoBancoDeDados.Repository
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@ID_DONO", UserSession.User_Id);
+                    if (UserSession.Role == "Usuario")
+                    {
+                        command.Parameters.AddWithValue("@ID_DONO", UserSession.User_Id);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@ID_DONO", UserSession.Admin_Id);
+                    }
                     command.Parameters.AddWithValue("@ID_ARQUIVO", fileID);
                     command.Parameters.AddWithValue("@LOGIN", receiverUsername);
                     command.Parameters.AddWithValue("@DATA_COMPARTILHAMENTO", DateTime.Now);
@@ -46,9 +53,9 @@ namespace ProjetoBancoDeDados.Repository
         public DataTable GetSharedFiles()
         {
             string query = "SELECT ARQUIVO.NOME AS NOME_ARQUIVO, " +
-                           "ARQUIVO.TIPO AS TIPO, " +
+                           "USUARIO.LOGIN AS NOME_RECEPTOR, " +
                            "COMPARTILHAR.DATA_COMPARTILHAMENTO AS DATA_COMPARTILHAMENTO, " +
-                           "USUARIO.LOGIN AS NOME_RECEPTOR " +
+                           "ARQUIVO.TIPO AS TIPO " +
                            "FROM COMPARTILHAR " +
                            "JOIN ARQUIVO ON COMPARTILHAR.ID_ARQUIVO = ARQUIVO.ID_ARQUIVO " +
                            "JOIN USUARIO ON COMPARTILHAR.ID_RECEPTOR = USUARIO.ID_USUARIO " +
@@ -60,7 +67,14 @@ namespace ProjetoBancoDeDados.Repository
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@ID_DONO", UserSession.User_Id);
+                    if (UserSession.Role == "Usuario")
+                    {
+                        command.Parameters.AddWithValue("@ID_DONO", UserSession.User_Id);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@ID_DONO", UserSession.Admin_Id);
+                    }
 
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
@@ -75,9 +89,9 @@ namespace ProjetoBancoDeDados.Repository
         public DataTable GetReceivedFiles()
         {
             string query = "SELECT ARQUIVO.NOME AS NOME_ARQUIVO, " +
-                           "ARQUIVO.TIPO AS TIPO, " +
+                           "USUARIO.LOGIN AS NOME_DONO, " +
                            "COMPARTILHAR.DATA_COMPARTILHAMENTO AS DATA_RECEBIMENTO, " +
-                           "USUARIO.LOGIN AS NOME_DONO " +
+                           "ARQUIVO.TIPO AS TIPO " +
                            "FROM COMPARTILHAR " +
                            "JOIN ARQUIVO ON COMPARTILHAR.ID_ARQUIVO = ARQUIVO.ID_ARQUIVO " +
                            "JOIN USUARIO ON COMPARTILHAR.ID_DONO = USUARIO.ID_USUARIO " +
@@ -89,7 +103,14 @@ namespace ProjetoBancoDeDados.Repository
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@ID_USUARIO", UserSession.User_Id);
+                    if (UserSession.Role == "Usuario")
+                    {
+                        command.Parameters.AddWithValue("@ID_USUARIO", UserSession.User_Id);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@ID_USUARIO", UserSession.Admin_Id);
+                    }
 
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Btn_Comment = new System.Windows.Forms.Button();
             this.txt_SearchFileByName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_OpenFile = new System.Windows.Forms.Button();
             this.Dgv_InstitutionFiles = new System.Windows.Forms.DataGridView();
-            this.Btn_Comment = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_InstitutionFiles)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(929, 88);
             this.panel1.TabIndex = 1;
+            // 
+            // Btn_Comment
+            // 
+            this.Btn_Comment.BackColor = System.Drawing.Color.Azure;
+            this.Btn_Comment.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Btn_Comment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Comment.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Btn_Comment.Location = new System.Drawing.Point(580, 18);
+            this.Btn_Comment.Name = "Btn_Comment";
+            this.Btn_Comment.Size = new System.Drawing.Size(131, 44);
+            this.Btn_Comment.TabIndex = 5;
+            this.Btn_Comment.Text = "Add a Comment";
+            this.Btn_Comment.UseVisualStyleBackColor = false;
+            this.Btn_Comment.Click += new System.EventHandler(this.Btn_Comment_Click);
             // 
             // txt_SearchFileByName
             // 
@@ -94,19 +108,6 @@
             this.Dgv_InstitutionFiles.Name = "Dgv_InstitutionFiles";
             this.Dgv_InstitutionFiles.Size = new System.Drawing.Size(856, 353);
             this.Dgv_InstitutionFiles.TabIndex = 2;
-            // 
-            // Btn_Comment
-            // 
-            this.Btn_Comment.BackColor = System.Drawing.Color.Azure;
-            this.Btn_Comment.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Btn_Comment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Comment.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Btn_Comment.Location = new System.Drawing.Point(580, 18);
-            this.Btn_Comment.Name = "Btn_Comment";
-            this.Btn_Comment.Size = new System.Drawing.Size(131, 44);
-            this.Btn_Comment.TabIndex = 5;
-            this.Btn_Comment.Text = "Add a Comment";
-            this.Btn_Comment.UseVisualStyleBackColor = false;
             // 
             // Frm_InstitutionFiles
             // 

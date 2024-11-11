@@ -16,7 +16,6 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\bin\Debug\ProjetoBancoDeDados.exe
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\bin\Debug\ProjetoBancoDeDados.pdb
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.csproj.AssemblyReference.cache
-C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_BrowsePlans_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_CreateAccount.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_EditProfile_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_GetHelp_UC.resources
@@ -24,7 +23,6 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_LoginAdmin.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_MainMenu.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_MyFiles_UC.resources
-C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_Notifications_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Frm_ShareList_UC.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Properties.Resources.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.csproj.GenerateResource.cache
@@ -72,3 +70,4 @@ C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDa
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.UCs.Frm_InstitutionFiles.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_OpenInstitution.resources
 C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_VersionHistory.resources
+C:\Users\thico\Source\Repos\TCarvalhoAraujo\ProjetoBancoDeDados\ProjetoBancoDeDados\obj\Debug\ProjetoBancoDeDados.Forms.Frm_Comment.resources

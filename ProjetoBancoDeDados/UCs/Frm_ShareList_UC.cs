@@ -44,6 +44,9 @@ namespace ProjetoBancoDeDados
         {
             Frm_ShareFile f = new Frm_ShareFile();
             f.ShowDialog();
+            this.Refresh();
+            LoadSharedFiles();
+            LoadReceivedFiles();
         }
     }
 }

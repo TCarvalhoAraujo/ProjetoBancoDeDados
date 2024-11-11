@@ -26,6 +26,14 @@ namespace ProjetoBancoDeDados.Forms
             LoadFile();
         }
 
+        public Frm_EditFile()
+        {
+            InitializeComponent();
+            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            fileRepo = new FileRepo(connectionString);
+            LoadRecentFile();
+        }
+
         private void LoadFile()
         {
             Arquivo arquivo = fileRepo.OpenFile(fileName);
@@ -42,24 +50,51 @@ namespace ProjetoBancoDeDados.Forms
             Txt_Location.Text = arquivo.Localizacao;
         }
 
+        public void LoadRecentFile()
+        {
+            Arquivo arquivo = fileRepo.OpenMostRecentFile();
+
+            Txt_Title.Text = arquivo.Name;
+            Txt_URL.Text = arquivo.URL;
+            Txt_Tipo.Text = arquivo.Tipo;
+            Txt_Permissao.Text = arquivo.Permisssao;
+            Txt_Content.Text = arquivo.Conteudo;
+            Txt_Date.Text = Convert.ToString(arquivo.Data_Modificacao);
+            Txt_FileID.Text = Convert.ToString(arquivo.File_ID);
+            Txt_UserID.Text = Convert.ToString(arquivo.User_ID);
+            Txt_Size.Text = Convert.ToString(arquivo.Tamanho);
+            Txt_Location.Text = arquivo.Localizacao;
+        }
+
         private void Btn_UpdateFile_Click(object sender, EventArgs e)
         {
-            bool isFileUpdated = fileRepo.EditFile(Txt_Title.Text, Txt_Tipo.Text, Txt_Permissao.Text, Txt_Content.Text, Txt_Location.Text, Convert.ToInt32(Txt_FileID.Text));
-            if (isFileUpdated == false)
+            if(Txt_Title.Text == "")
             {
-                MessageBox.Show("Couldn't update file",
+                MessageBox.Show("Can't leave 'Title' empty!",
                                 "Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("File updated successfully!",
-                                "Success",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
+                bool isFileUpdated = fileRepo.EditFile(Txt_Title.Text, Txt_Tipo.Text, Txt_Permissao.Text, Txt_Content.Text, Txt_Location.Text, Convert.ToInt32(Txt_FileID.Text));
+                if (isFileUpdated == false)
+                {
+                    MessageBox.Show("Couldn't update file",
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("File updated successfully!",
+                                    "Success",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
 
-                this.Refresh();
+                    this.Refresh();
+                }
             }
         }
 

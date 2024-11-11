@@ -113,7 +113,7 @@
             this.Txt_Descricao.Location = new System.Drawing.Point(18, 190);
             this.Txt_Descricao.Multiline = true;
             this.Txt_Descricao.Name = "Txt_Descricao";
-            this.Txt_Descricao.Size = new System.Drawing.Size(875, 311);
+            this.Txt_Descricao.Size = new System.Drawing.Size(875, 284);
             this.Txt_Descricao.TabIndex = 6;
             // 
             // Frm_GetHelp_UC

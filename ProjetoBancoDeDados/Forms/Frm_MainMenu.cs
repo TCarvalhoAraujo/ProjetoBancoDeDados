@@ -20,6 +20,7 @@ namespace ProjetoBancoDeDados
             TabPage TB = new TabPage();
             TB.Name = "Welcome";
             TB.Text = "Welcome";
+            TB.Controls.Add(uC);
             Tbc_Apps.TabPages.Add(TB);
 
         }
@@ -54,26 +55,6 @@ namespace ProjetoBancoDeDados
             Tbc_Apps.TabPages.Add(TB);
         }
 
-        private void browsePlansToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_BrowsePlans_UC uC = new Frm_BrowsePlans_UC();
-            TabPage TB = new TabPage();
-            TB.Name = "Browse Plans";
-            TB.Text = "Browse Plans";
-            TB.Controls.Add(uC);
-            Tbc_Apps.TabPages.Add(TB);
-        }
-
-        private void notificationsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Notifications_UC uC = new Frm_Notifications_UC();
-            TabPage TB = new TabPage();
-            TB.Name = "Notifications";
-            TB.Text = "Notifications";
-            TB.Controls.Add(uC);
-            Tbc_Apps.TabPages.Add(TB);
-        }
-
         private void getHelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_GetHelp_UC uC = new Frm_GetHelp_UC();
@@ -97,6 +78,11 @@ namespace ProjetoBancoDeDados
             TB.Text = "Institution Fies";
             TB.Controls.Add(uC);
             Tbc_Apps.TabPages.Add(TB);
+        }
+
+        private void Tbc_Apps_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Refresh();
         }
     }
 }

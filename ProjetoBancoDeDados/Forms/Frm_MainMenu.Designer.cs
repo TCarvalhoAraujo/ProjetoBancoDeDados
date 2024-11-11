@@ -32,14 +32,12 @@
             this.fileExplorerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shareListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.institutionFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.browsePlansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Apps = new System.Windows.Forms.TabControl();
-            this.institutionFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mnu_MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,12 +78,17 @@
             this.shareListToolStripMenuItem.Text = "Share List";
             this.shareListToolStripMenuItem.Click += new System.EventHandler(this.shareListToolStripMenuItem_Click);
             // 
+            // institutionFilesToolStripMenuItem
+            // 
+            this.institutionFilesToolStripMenuItem.Name = "institutionFilesToolStripMenuItem";
+            this.institutionFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.institutionFilesToolStripMenuItem.Text = "Institution Files";
+            this.institutionFilesToolStripMenuItem.Click += new System.EventHandler(this.institutionFilesToolStripMenuItem_Click);
+            // 
             // myProfileToolStripMenuItem
             // 
             this.myProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editProfileToolStripMenuItem,
-            this.browsePlansToolStripMenuItem,
-            this.notificationsToolStripMenuItem});
+            this.editProfileToolStripMenuItem});
             this.myProfileToolStripMenuItem.Name = "myProfileToolStripMenuItem";
             this.myProfileToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.myProfileToolStripMenuItem.Text = "My Profile";
@@ -93,23 +96,9 @@
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
-            // 
-            // browsePlansToolStripMenuItem
-            // 
-            this.browsePlansToolStripMenuItem.Name = "browsePlansToolStripMenuItem";
-            this.browsePlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.browsePlansToolStripMenuItem.Text = "My Institution";
-            this.browsePlansToolStripMenuItem.Click += new System.EventHandler(this.browsePlansToolStripMenuItem_Click);
-            // 
-            // notificationsToolStripMenuItem
-            // 
-            this.notificationsToolStripMenuItem.Name = "notificationsToolStripMenuItem";
-            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.notificationsToolStripMenuItem.Text = "Notifications";
-            this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.notificationsToolStripMenuItem_Click);
             // 
             // getHelpToolStripMenuItem
             // 
@@ -133,13 +122,7 @@
             this.Tbc_Apps.SelectedIndex = 0;
             this.Tbc_Apps.Size = new System.Drawing.Size(913, 526);
             this.Tbc_Apps.TabIndex = 1;
-            // 
-            // institutionFilesToolStripMenuItem
-            // 
-            this.institutionFilesToolStripMenuItem.Name = "institutionFilesToolStripMenuItem";
-            this.institutionFilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.institutionFilesToolStripMenuItem.Text = "Institution Files";
-            this.institutionFilesToolStripMenuItem.Click += new System.EventHandler(this.institutionFilesToolStripMenuItem_Click);
+            this.Tbc_Apps.SelectedIndexChanged += new System.EventHandler(this.Tbc_Apps_SelectedIndexChanged);
             // 
             // Frm_MainMenu
             // 
@@ -171,9 +154,7 @@
         private System.Windows.Forms.ToolStripMenuItem myFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shareListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem browsePlansToolStripMenuItem;
         private System.Windows.Forms.TabControl Tbc_Apps;
-        private System.Windows.Forms.ToolStripMenuItem notificationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem institutionFilesToolStripMenuItem;
     }
 }

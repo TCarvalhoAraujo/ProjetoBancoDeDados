@@ -1,4 +1,5 @@
-﻿using ProjetoBancoDeDados.Repository;
+﻿using ProjetoBancoDeDados.Entity;
+using ProjetoBancoDeDados.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,14 +15,12 @@ namespace ProjetoBancoDeDados.Forms
 {
     public partial class Frm_DeleteFile : Form
     {
-        private string fileName;
         private FileRepo fileRepo;
-        public Frm_DeleteFile(String name)
+        public Frm_DeleteFile()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
             fileRepo = new FileRepo(connectionString);
-            fileName = name;
         }
 
         private void Btn_DeleteFile_Click(object sender, EventArgs e)
@@ -35,23 +34,47 @@ namespace ProjetoBancoDeDados.Forms
             }
             else
             {
-                bool isFileDeleted = fileRepo.DeleteFile(Convert.ToInt32(Txt_FileID.Text), Txt_Password.Text);
-
-                if (isFileDeleted == false)
+                if(UserSession.Role == "Usuario")
                 {
-                    MessageBox.Show("Couldn't delete file",
-                                    "Error",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Error);
+                    bool isFileDeleted = fileRepo.DeleteFile(Convert.ToInt32(Txt_FileID.Text), Txt_Password.Text);
+
+                    if (isFileDeleted == false)
+                    {
+                        MessageBox.Show("Couldn't delete file",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("File deleted successfully!",
+                                        "Success",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information);
+
+                        this.Close();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("File deleted successfully!",
-                                    "Success",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
+                    bool isFileDeleted = fileRepo.DeleteFileAsAdmin(Convert.ToInt32(Txt_FileID.Text), Txt_Password.Text);
 
-                    this.Close();
+                    if (isFileDeleted == false)
+                    {
+                        MessageBox.Show("Couldn't delete file",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("File deleted successfully!",
+                                        "Success",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information);
+
+                        this.Close();
+                    }
                 }
             }
         }

@@ -17,7 +17,7 @@ namespace ProjetoBancoDeDados.Repository
         {
             this.connectionString = connectionString;
         }
-
+        
         public bool CreateFile(String nome, String tipo, String acesso, String conteudo)
         {
             string query = "INSERT INTO ARQUIVO (ID_USUARIO, NOME, TIPO, PERMISSAO_ACESSO, " +
@@ -106,7 +106,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public DataTable GetMyFiles()
         {
             string query = "SELECT ID_ARQUIVO, NOME, PERMISSAO_ACESSO, " +
@@ -131,7 +131,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public DataTable GetAllFiles()
         {
             string query = "SELECT ID_ARQUIVO, NOME, PERMISSAO_ACESSO, " +
@@ -153,7 +153,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public bool EditFile(String nome, String tipo, String permissao, String conteudo, String localizacao, int id_arquivo)
         {
             string query = "UPDATE ARQUIVO SET " +
@@ -184,7 +184,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public bool DeleteFile(int fileID, String password)
         {
             string query = "DELETE ARQUIVO FROM ARQUIVO " +
@@ -209,7 +209,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public bool DeleteFileAsAdmin(int fileID, String password)
         {
             string query = "DELETE FROM ARQUIVO A " +
@@ -232,7 +232,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public DataTable GetInstitutionFiles()
         {
             string query = "SELECT I.NOME AS NOME_INSTITUICAO, A.ID_ARQUIVO, A.NOME AS NOME_ARQUIVO, " +
@@ -260,7 +260,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public Arquivo OpenInstitutionFile(String nome)
         {
             string query = "SELECT A.ID_ARQUIVO, A.ID_USUARIO, A.NOME, A.TIPO, A.PERMISSAO_ACESSO, " +
@@ -305,7 +305,7 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
-
+        
         public HistoricoVersionamento GetCurrentVersion(int id)
         {
             string query = "SELECT A.NOME, H.OPERACAO, H.DATA_VERSIONAMENTO, H.CONTEUDO, " +
@@ -354,7 +354,7 @@ namespace ProjetoBancoDeDados.Repository
                            "FROM HISTORICO_VERSIONAMENTO H " +
                            "LEFT JOIN ARQUIVO A ON A.ID_ARQUIVO = H.ID_ARQUIVO " +
                            "WHERE H.ID_ARQUIVO = @ID_ARQUIVO " +
-                           "ORDER BY H.DATA_VERSIONAMENTO DESC;";
+                           "ORDER BY H.DATA_VERSIONAMENTO DESC";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {

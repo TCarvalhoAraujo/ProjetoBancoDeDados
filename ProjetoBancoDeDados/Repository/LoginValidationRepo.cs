@@ -40,7 +40,7 @@ namespace ProjetoBancoDeDados.Queries
 
         public bool ValidateUserLogin(String email, String password)
         {
-            string verifyQuery = "SELECT COUNT(*) FROM ADMINISTRADOR " +
+            string verifyQuery = "SELECT COUNT(*) FROM USUARIO " +
                                  "WHERE SENHA = @SENHA " +
                                  "AND EMAIL = @EMAIL";
 
@@ -61,7 +61,7 @@ namespace ProjetoBancoDeDados.Queries
                     verifyCommand.Parameters.AddWithValue("@SENHA", password);
 
                     int count = Convert.ToInt32(verifyCommand.ExecuteScalar());
-                    if (count > 0)
+                    if (count == 0)
                     {
                         return false;
                     }

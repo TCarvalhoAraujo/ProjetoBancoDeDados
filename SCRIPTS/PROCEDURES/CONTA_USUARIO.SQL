@@ -6,7 +6,7 @@ BEGIN
     ELSE
         SELECT 
         ID_ARQ AS 'id do arquivo',
-		COUNT(DISTINCT ID_DONO) AS 'numero de usuarios'
+		COUNT(DISTINCT ID_RECEPTOR) AS 'numero de usuarios'
         FROM COMPARTILHAR
         WHERE ID_ARQUIVO = ID_ARQ;
     END IF;

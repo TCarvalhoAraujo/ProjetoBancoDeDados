@@ -13,49 +13,72 @@ Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte 
 - Lucas Eduardo Gurgel
 - Thiago Carvalho Araujo
 
-## Objetivo do Trabalho
+# Projeto de Banco de Dados
 
-O trabalho consiste na criação de um banco de dados para um sistema fictício, com a implementação das seguintes etapas:
-
-1. **Modelagem do Banco de Dados**: A modelagem foi realizada utilizando o Diagrama Entidade-Relacionamento (ER), que descreve as entidades, seus atributos e os relacionamentos entre elas. O foco foi garantir que o modelo fosse claro, lógico e eficiente para o armazenamento e manipulação de dados.
-
-2. **Criação de Tabelas e Relacionamentos**: Utilizando o modelo ER, as tabelas foram criadas no banco de dados com a definição de chaves primárias e estrangeiras, garantindo a integridade referencial entre os dados. A escolha das chaves foi feita de forma a otimizar as consultas e a consistência dos dados.
-
-3. **Normalização**: Durante a modelagem, seguimos as primeiras formas normais (1NF, 2NF, 3NF) para eliminar redundâncias e dependências, resultando em um banco de dados mais eficiente e livre de anomalias de atualização.
-
-4. **Consultas SQL**: Foram desenvolvidas consultas SQL para manipulação de dados e geração de relatórios. As consultas incluem operações de **SELECT**, **INSERT**, **UPDATE** e **DELETE**, assim como consultas mais complexas, utilizando **JOINs**, **agregações** e **subconsultas**.
-
-5. **Desempenho e Otimização**: A performance do banco foi um ponto de atenção, e buscamos otimizar as consultas mais comuns, criando índices onde necessário, para garantir que o sistema seja eficiente, mesmo com um grande volume de dados.
+Este projeto de Banco de Dados foi desenvolvido para gerenciar arquivos e compartilhamentos de usuários em um sistema seguro. Abaixo, detalhamos a estrutura do banco de dados, as tabelas criadas, scripts SQL utilizados e consultas implementadas para realizar operações de inserção, seleção, atribuição de permissões, entre outras funcionalidades.
 
 ## Estrutura do Banco de Dados
 
-O banco de dados foi projetado para simular um sistema típico de gestão de dados, com tabelas inter-relacionadas. As principais tabelas incluem:
+O banco de dados contém as seguintes tabelas principais:
 
-- **Clientes**: Contém informações dos clientes, como nome, endereço, telefone, etc.
-- **Produtos**: Armazena os dados dos produtos disponíveis para venda.
-- **Pedidos**: Registra os pedidos feitos pelos clientes, incluindo a data do pedido e os detalhes do pagamento.
-- **Itens de Pedido**: Detalha os itens específicos de cada pedido, relacionando os produtos e suas quantidades.
-- **Funcionários**: Contém informações sobre os funcionários que processam os pedidos e interagem com o sistema.
+1. **ARQUIVO** - Armazena informações dos arquivos no sistema.
+2. **COMPARTILHAR** - Gerencia o compartilhamento de arquivos entre usuários.
+3. **USUARIO** - Registra os usuários do sistema, com detalhes de suas permissões.
+4. **INSTITUICAO** - Armazena dados da instituição, incluindo o plano e espaço disponível.
+5. **OPERAR** - Registra as operações realizadas pelos usuários nos arquivos.
+6. **COMENTAR** - Registra comentários feitos pelos usuários nos arquivos.
+7. **ADMINISTRADOR** - Tabela que diferencia os administradores entre os usuários.
+8. **SUPORTE** - Registra o suporte dado aos usuários, com detalhes de data, hora e descrição do suporte.
+9. **HISTORICO DE VERSIONAMENTO** - Controla o versionamento dos arquivos com dados de operação e usuário responsável.
 
-Além disso, a implementação de **visões** e **procedimentos armazenados** foi realizada para facilitar a consulta de dados complexos e melhorar a modularidade do sistema.
+## Scripts de Criação e Inserção de Dados
 
-## Principais Funcionalidades Implementadas
+### 1. Criação das Tabelas
 
-- **Modelagem do Banco de Dados**: A modelagem ER foi implementada considerando as necessidades do sistema, com especial atenção para a normalização e o relacionamento entre as tabelas.
-  
-- **Operações CRUD**: O sistema implementa operações completas de **Create**, **Read**, **Update** e **Delete** para gerenciamento de dados, tanto para inserção de novos registros quanto para a manutenção e atualização dos existentes.
+Os scripts SQL responsáveis pela criação das tabelas definem os atributos principais, suas restrições e relacionamentos:
 
-- **Consultas Complexas**: Implementação de consultas SQL avançadas, como filtros de múltiplas condições, junções entre tabelas, e agregações (como contagens, somas e médias), além da criação de relatórios que exigem a junção de informações de diferentes entidades.
+- **ARQUIVO**: Contém ID, nome, tipo, data de criação, entre outros atributos que caracterizam um arquivo.
+- **COMPARTILHAR**: Define a relação entre arquivos e usuários para controle de compartilhamento.
+- **USUARIO**: Registra informações como ID, nome, e-mail e permissões dos usuários.
+- **INSTITUICAO**: Armazena informações como nome, causa social, endereço, plano e espaço do usuário.
+- **OPERAR**: Tabela para rastrear o tipo de operação realizada e a data da operação nos arquivos.
+- **COMENTAR**: Registra o conteúdo dos comentários feitos pelos usuários, junto com a data e hora do comentário.
+- **ADMINISTRADOR**: Identifica os administradores entre os usuários com um ID específico.
+- **SUPORTE**: Armazena dados de suporte, incluindo o ID do usuário, ID do administrador, data e hora do suporte e descrição.
+- **HISTORICO DE VERSIONAMENTO**: Mantém um histórico das alterações realizadas nos arquivos, incluindo data e tipo de operação.
 
-- **Procedimentos Armazenados e Triggers**: Para garantir a integridade e automação de algumas tarefas, foram utilizados procedimentos armazenados (stored procedures) e triggers para validações automáticas de dados e execução de operações adicionais após inserções ou atualizações.
+### 2. Inserção de Dados
 
-## Tecnologias Utilizadas
+Scripts de inserção foram criados para popular as tabelas com dados iniciais, permitindo que o sistema comece a operar com informações de usuários, arquivos e compartilhamentos. Isso inclui registros de usuários com diferentes roles e arquivos associados.
 
-- **SGBD**: MySQL ou PostgreSQL.
-- **Linguagem SQL**: Para definição de estruturas de dados (DDL), manipulação de dados (DML) e criação de consultas (DQL).
-- **Ferramentas de Modelagem**: draw.io para criar o Diagrama ER e estruturar o banco de dados visualmente.
-- **C#**: Linguagem escolhida para se relacionar com o banco de dados em SQL.
+## Scripts de Consulta
 
-## Conclusão
+### 1. Exibir Arquivos Compartilhados
 
-Este trabalho proporcionou uma visão prática do processo completo de criação de um banco de dados, desde a modelagem até a execução de operações em SQL. A experiência foi fundamental para entender os desafios reais envolvidos na construção de sistemas de banco de dados eficientes e funcionais. Além disso, o projeto serviu para consolidar o conhecimento em SQL e na aplicação de boas práticas de modelagem e normalização.
+Este script permite listar todos os arquivos que foram compartilhados com cada usuário, detalhando quem compartilhou o arquivo e o tipo de acesso permitido.
+
+### 2. Exibir Arquivos Recebidos por Usuário
+
+Consulta específica para verificar quais arquivos cada usuário recebeu, facilitando o gerenciamento e controle de acessos.
+
+### 3. Seleção de Arquivos e Compartilhamentos
+
+Scripts SQL que permitem ao administrador filtrar arquivos e compartilhamentos com base em critérios específicos, como data de criação, tipo de arquivo ou permissões.
+
+## Controle de Permissões e Roles
+
+### 1. Atribuição de Roles aos Usuários
+
+O projeto inclui scripts para atribuir roles (perfis de acesso) aos usuários, como **administrador**, **editor** e **visualizador**, determinando os níveis de acesso e operação que cada usuário pode realizar.
+
+### 2. Sessões de Administrador
+
+Scripts específicos permitem que administradores consultem logs e registros de compartilhamento para garantir a segurança e monitoramento do sistema.
+
+## Explicações e Justificativas
+
+Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir a segurança dos dados:
+
+- **Índices** foram utilizados para otimizar consultas em tabelas grandes.
+- **Foreign Keys** foram implementadas para assegurar a integridade referencial entre as tabelas.
+- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados 

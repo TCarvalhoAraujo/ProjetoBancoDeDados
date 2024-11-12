@@ -121,5 +121,29 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
+
+        public bool RemoveAccess(int ID)
+        {
+            using (MySqlConnection connection = new MySqlConnection (connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("RemoveAcessoArquivo", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@arquivo_id", ID);
+
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                }
+                catch (MySqlException e)
+                {
+                    return false;
+                }
+            }
+        }
     }
 }

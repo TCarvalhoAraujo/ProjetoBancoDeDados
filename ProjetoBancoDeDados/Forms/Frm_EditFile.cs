@@ -17,11 +17,13 @@ namespace ProjetoBancoDeDados.Forms
     {
         private string fileName;
         private FileRepo fileRepo;
+        private ShareFileRepo shareFileRepo;
         public Frm_EditFile(String name)
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
             fileRepo = new FileRepo(connectionString);
+            shareFileRepo = new ShareFileRepo(connectionString);
             fileName = name;
             LoadFile();
         }
@@ -102,6 +104,25 @@ namespace ProjetoBancoDeDados.Forms
         {
             Frm_VersionHistory f = new Frm_VersionHistory(Convert.ToInt32(Txt_FileID.Text));
             f.ShowDialog();
+        }
+
+        private void Btn_RemoveAccess_Click(object sender, EventArgs e)
+        {
+            bool isRemoveValid = shareFileRepo.RemoveAccess(Convert.ToInt32(Txt_FileID.Text));
+            if (isRemoveValid == false)
+            {
+                MessageBox.Show("Couldn't remove access",
+                                "Error",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Access removed successfully",
+                                "Success",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+            }
         }
     }
 }

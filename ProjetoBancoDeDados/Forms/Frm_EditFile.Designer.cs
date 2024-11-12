@@ -50,6 +50,7 @@
             this.Txt_Date = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Txt_Location = new System.Windows.Forms.TextBox();
+            this.Btn_RemoveAccess = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Txt_Title
@@ -119,7 +120,7 @@
             this.Btn_UpdateFile.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_UpdateFile.Location = new System.Drawing.Point(555, 23);
             this.Btn_UpdateFile.Name = "Btn_UpdateFile";
-            this.Btn_UpdateFile.Size = new System.Drawing.Size(124, 52);
+            this.Btn_UpdateFile.Size = new System.Drawing.Size(124, 34);
             this.Btn_UpdateFile.TabIndex = 16;
             this.Btn_UpdateFile.Text = "Save Changes";
             this.Btn_UpdateFile.UseVisualStyleBackColor = false;
@@ -131,9 +132,9 @@
             this.Btn_HistoryVersion.FlatAppearance.BorderSize = 0;
             this.Btn_HistoryVersion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_HistoryVersion.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_HistoryVersion.Location = new System.Drawing.Point(555, 86);
+            this.Btn_HistoryVersion.Location = new System.Drawing.Point(555, 65);
             this.Btn_HistoryVersion.Name = "Btn_HistoryVersion";
-            this.Btn_HistoryVersion.Size = new System.Drawing.Size(124, 56);
+            this.Btn_HistoryVersion.Size = new System.Drawing.Size(124, 35);
             this.Btn_HistoryVersion.TabIndex = 30;
             this.Btn_HistoryVersion.Text = "History Version";
             this.Btn_HistoryVersion.UseVisualStyleBackColor = false;
@@ -276,12 +277,27 @@
             this.Txt_Location.Size = new System.Drawing.Size(52, 22);
             this.Txt_Location.TabIndex = 44;
             // 
+            // Btn_RemoveAccess
+            // 
+            this.Btn_RemoveAccess.BackColor = System.Drawing.Color.LightBlue;
+            this.Btn_RemoveAccess.FlatAppearance.BorderSize = 0;
+            this.Btn_RemoveAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_RemoveAccess.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_RemoveAccess.Location = new System.Drawing.Point(555, 108);
+            this.Btn_RemoveAccess.Name = "Btn_RemoveAccess";
+            this.Btn_RemoveAccess.Size = new System.Drawing.Size(124, 34);
+            this.Btn_RemoveAccess.TabIndex = 45;
+            this.Btn_RemoveAccess.Text = "Remove Access";
+            this.Btn_RemoveAccess.UseVisualStyleBackColor = false;
+            this.Btn_RemoveAccess.Click += new System.EventHandler(this.Btn_RemoveAccess_Click);
+            // 
             // Frm_EditFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(713, 536);
+            this.Controls.Add(this.Btn_RemoveAccess);
             this.Controls.Add(this.Txt_Location);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Txt_Date);
@@ -336,5 +352,6 @@
         private System.Windows.Forms.TextBox Txt_Date;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox Txt_Location;
+        private System.Windows.Forms.Button Btn_RemoveAccess;
     }
 }

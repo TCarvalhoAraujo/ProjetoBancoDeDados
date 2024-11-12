@@ -13,6 +13,10 @@ Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte 
 - Lucas Eduardo Gurgel
 - Thiago Carvalho Araujo
 
+# Projeto de Banco de Dados
+
+Este projeto de Banco de Dados foi desenvolvido para gerenciar arquivos e compartilhamentos de usuários em um sistema seguro. Abaixo, detalhamos a estrutura do banco de dados, as tabelas criadas, scripts SQL utilizados e consultas implementadas para realizar operações de inserção, seleção, atribuição de permissões, entre outras funcionalidades.
+
 ## Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
@@ -20,8 +24,12 @@ O banco de dados contém as seguintes tabelas principais:
 1. **ARQUIVO** - Armazena informações dos arquivos no sistema.
 2. **COMPARTILHAR** - Gerencia o compartilhamento de arquivos entre usuários.
 3. **USUARIO** - Registra os usuários do sistema, com detalhes de suas permissões.
-
-### Diagrama de Relacionamento
+4. **INSTITUICAO** - Armazena dados da instituição, incluindo o plano e espaço disponível.
+5. **OPERAR** - Registra as operações realizadas pelos usuários nos arquivos.
+6. **COMENTAR** - Registra comentários feitos pelos usuários nos arquivos.
+7. **ADMINISTRADOR** - Tabela que diferencia os administradores entre os usuários.
+8. **SUPORTE** - Registra o suporte dado aos usuários, com detalhes de data, hora e descrição do suporte.
+9. **HISTORICO DE VERSIONAMENTO** - Controla o versionamento dos arquivos com dados de operação e usuário responsável.
 
 ## Scripts de Criação e Inserção de Dados
 
@@ -32,6 +40,12 @@ Os scripts SQL responsáveis pela criação das tabelas definem os atributos pri
 - **ARQUIVO**: Contém ID, nome, tipo, data de criação, entre outros atributos que caracterizam um arquivo.
 - **COMPARTILHAR**: Define a relação entre arquivos e usuários para controle de compartilhamento.
 - **USUARIO**: Registra informações como ID, nome, e-mail e permissões dos usuários.
+- **INSTITUICAO**: Armazena informações como nome, causa social, endereço, plano e espaço do usuário.
+- **OPERAR**: Tabela para rastrear o tipo de operação realizada e a data da operação nos arquivos.
+- **COMENTAR**: Registra o conteúdo dos comentários feitos pelos usuários, junto com a data e hora do comentário.
+- **ADMINISTRADOR**: Identifica os administradores entre os usuários com um ID específico.
+- **SUPORTE**: Armazena dados de suporte, incluindo o ID do usuário, ID do administrador, data e hora do suporte e descrição.
+- **HISTORICO DE VERSIONAMENTO**: Mantém um histórico das alterações realizadas nos arquivos, incluindo data e tipo de operação.
 
 ### 2. Inserção de Dados
 
@@ -67,4 +81,4 @@ Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir
 
 - **Índices** foram utilizados para otimizar consultas em tabelas grandes.
 - **Foreign Keys** foram implementadas para assegurar a integridade referencial entre as tabelas.
-- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados sensíveis.
+- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados 

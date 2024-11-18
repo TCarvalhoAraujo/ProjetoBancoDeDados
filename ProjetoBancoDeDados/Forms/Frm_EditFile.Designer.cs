@@ -51,6 +51,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.Txt_Location = new System.Windows.Forms.TextBox();
             this.Btn_RemoveAccess = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Txt_UserAccess = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Txt_Title
@@ -59,7 +61,7 @@
             this.Txt_Title.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Title.Location = new System.Drawing.Point(79, 23);
             this.Txt_Title.Name = "Txt_Title";
-            this.Txt_Title.Size = new System.Drawing.Size(289, 22);
+            this.Txt_Title.Size = new System.Drawing.Size(163, 22);
             this.Txt_Title.TabIndex = 22;
             // 
             // label6
@@ -182,17 +184,17 @@
             // 
             this.Txt_FileID.BackColor = System.Drawing.Color.Azure;
             this.Txt_FileID.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FileID.Location = new System.Drawing.Point(462, 22);
+            this.Txt_FileID.Location = new System.Drawing.Point(325, 22);
             this.Txt_FileID.Name = "Txt_FileID";
             this.Txt_FileID.ReadOnly = true;
-            this.Txt_FileID.Size = new System.Drawing.Size(52, 22);
+            this.Txt_FileID.Size = new System.Drawing.Size(43, 22);
             this.Txt_FileID.TabIndex = 36;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(390, 23);
+            this.label5.Location = new System.Drawing.Point(265, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 18);
             this.label5.TabIndex = 35;
@@ -202,10 +204,10 @@
             // 
             this.Txt_UserID.BackColor = System.Drawing.Color.Azure;
             this.Txt_UserID.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_UserID.Location = new System.Drawing.Point(462, 59);
+            this.Txt_UserID.Location = new System.Drawing.Point(480, 59);
             this.Txt_UserID.Name = "Txt_UserID";
             this.Txt_UserID.ReadOnly = true;
-            this.Txt_UserID.Size = new System.Drawing.Size(52, 22);
+            this.Txt_UserID.Size = new System.Drawing.Size(43, 22);
             this.Txt_UserID.TabIndex = 38;
             // 
             // label7
@@ -222,10 +224,10 @@
             // 
             this.Txt_Size.BackColor = System.Drawing.Color.Azure;
             this.Txt_Size.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Size.Location = new System.Drawing.Point(462, 94);
+            this.Txt_Size.Location = new System.Drawing.Point(480, 94);
             this.Txt_Size.Name = "Txt_Size";
             this.Txt_Size.ReadOnly = true;
-            this.Txt_Size.Size = new System.Drawing.Size(52, 22);
+            this.Txt_Size.Size = new System.Drawing.Size(43, 22);
             this.Txt_Size.TabIndex = 40;
             // 
             // label8
@@ -272,9 +274,9 @@
             // 
             this.Txt_Location.BackColor = System.Drawing.Color.Azure;
             this.Txt_Location.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Location.Location = new System.Drawing.Point(462, 124);
+            this.Txt_Location.Location = new System.Drawing.Point(480, 124);
             this.Txt_Location.Name = "Txt_Location";
-            this.Txt_Location.Size = new System.Drawing.Size(52, 22);
+            this.Txt_Location.Size = new System.Drawing.Size(43, 22);
             this.Txt_Location.TabIndex = 44;
             // 
             // Btn_RemoveAccess
@@ -291,12 +293,34 @@
             this.Btn_RemoveAccess.UseVisualStyleBackColor = false;
             this.Btn_RemoveAccess.Click += new System.EventHandler(this.Btn_RemoveAccess_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(390, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 18);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "User Access:";
+            // 
+            // Txt_UserAccess
+            // 
+            this.Txt_UserAccess.BackColor = System.Drawing.Color.Azure;
+            this.Txt_UserAccess.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_UserAccess.Location = new System.Drawing.Point(480, 24);
+            this.Txt_UserAccess.Name = "Txt_UserAccess";
+            this.Txt_UserAccess.ReadOnly = true;
+            this.Txt_UserAccess.Size = new System.Drawing.Size(43, 22);
+            this.Txt_UserAccess.TabIndex = 47;
+            // 
             // Frm_EditFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(713, 536);
+            this.Controls.Add(this.Txt_UserAccess);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.Btn_RemoveAccess);
             this.Controls.Add(this.Txt_Location);
             this.Controls.Add(this.label10);
@@ -353,5 +377,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox Txt_Location;
         private System.Windows.Forms.Button Btn_RemoveAccess;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox Txt_UserAccess;
     }
 }

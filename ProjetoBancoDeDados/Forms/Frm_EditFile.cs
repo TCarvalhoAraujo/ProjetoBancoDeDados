@@ -50,6 +50,19 @@ namespace ProjetoBancoDeDados.Forms
             Txt_UserID.Text = Convert.ToString(arquivo.User_ID);
             Txt_Size.Text = Convert.ToString(arquivo.Tamanho);
             Txt_Location.Text = arquivo.Localizacao;
+
+            int countUserAccess = fileRepo.CountUserAccess(Convert.ToInt32(Txt_FileID.Text));
+            if (countUserAccess == -1)
+            {
+                MessageBox.Show("Couldn't load who has access to this file",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+            else
+            {
+                Txt_UserAccess.Text = Convert.ToString(countUserAccess);
+            }
         }
 
         public void LoadRecentFile()
@@ -66,6 +79,19 @@ namespace ProjetoBancoDeDados.Forms
             Txt_UserID.Text = Convert.ToString(arquivo.User_ID);
             Txt_Size.Text = Convert.ToString(arquivo.Tamanho);
             Txt_Location.Text = arquivo.Localizacao;
+
+            int countUserAccess = fileRepo.CountUserAccess(Convert.ToInt32(Txt_FileID.Text));
+            if (countUserAccess == -1)
+            {
+                MessageBox.Show("Couldn't load who has access to this file",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+            else
+            {
+                Txt_UserAccess.Text = Convert.ToString(countUserAccess);
+            }
         }
 
         private void Btn_UpdateFile_Click(object sender, EventArgs e)
@@ -122,6 +148,8 @@ namespace ProjetoBancoDeDados.Forms
                                 "Success",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
+
+                LoadFile();
             }
         }
     }

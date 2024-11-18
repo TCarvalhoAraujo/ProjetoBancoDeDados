@@ -456,5 +456,38 @@ namespace ProjetoBancoDeDados.Repository
                 }
             }
         }
+
+        public int CountUserAccess(int ID)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("CONTA_USUARIO", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("ID_ARQ", ID);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return reader.GetInt32("numero de usuarios");
+                            }
+                            else
+                            {
+                                return 0;
+                            }
+                        }
+                    }
+                }
+                catch (MySqlException e)
+                {
+                    return -1;
+                }
+            }
+        }
     }
 }

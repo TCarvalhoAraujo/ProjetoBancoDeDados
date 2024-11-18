@@ -4,7 +4,7 @@
 
 ## Descrição 
 
-Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte de um trabalho acadêmico da disciplina de Banco de Dados da UNICAP que aborda a criação e manipulação de um banco de dados relacional. O objetivo principal do projeto foi a aplicação prática de conceitos de modelagem de dados, normalização e a execução de operações em SQL, com o propósito de demonstrar a construção de um sistema de banco de dados eficiente e funcional.
+Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte de um trabalho acadêmico da disciplina de Banco de Dados da UNICAP que aborda a criação e manipulação de um banco de dados relacional. O objetivo principal do projeto foi a aplicação prática de conceitos de modelagem de dados, normalização e a execução de operações em SQL, com o propósito de demonstrar a construção de um sistema de banco de dados eficiente e funcional. Para complementar o banco de dados, foi desenvolvida uma aplicação desktop utilizando WindowsForms em C#, garantindo uma interface amigável e de fácil interação. Essa aplicação permite realizar operações como cadastro de usuários, consulta e manipulação de arquivos, atribuição de permissões e registro de atividades no banco de dados, tudo de forma integrada e segura
 
 ## Grupo
 - Maria Clara Soares
@@ -16,6 +16,16 @@ Este repositório contém o **Projeto Banco de Dados**, desenvolvido como parte 
 # Projeto de Banco de Dados
 
 Este projeto de Banco de Dados foi desenvolvido para gerenciar arquivos e compartilhamentos de usuários em um sistema seguro. Abaixo, detalhamos a estrutura do banco de dados, as tabelas criadas, scripts SQL utilizados e consultas implementadas para realizar operações de inserção, seleção, atribuição de permissões, entre outras funcionalidades.
+
+## Desenvolvimento com Windows Forms e C#
+
+Para a interface gráfica do sistema, usamos WindowsForms, juntamente com a linguagem C#, para criar uma aplicação desktop que interage diretamente com o banco de dados MySQL.
+
+### Por que escolher C#?
+
+1. **SQL NATIVO** - O C# nos permite usar SQL nativo e fazer consultas diretamente no banco de dados, tornando-se uma escolha ideal para projetos que demandam manipulação e gerenciamento eficiente de dados.
+2. **INTEGRAÇÂO COM O .NET FRAMEWORK** - O suporte ao Windows Forms no .NET Framework proporciona ferramentas robustas e simplificadas para a criação de interfaces gráficas, permitindo o desenvolvimento rápido de aplicativos desktop amigáveis ao usuário.
+3. **ESCALABILIDADE** - C# é uma linguagem versátil, permitindo que o sistema possa ser expandido para incluir funcionalidades mais complexas no futuro, como a implementação do Entity Framework.
 
 ## Estrutura do Banco de Dados
 

@@ -96,7 +96,8 @@ Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir
 ## Procedures
 
 ### 1. Verificar atividades:
-- a
+- Procedimento armazenado para atualizar a data da última versão na tabela 'ATIVIDADE_RECENTES'.
+
 
 ### 2. Conta Usuario:
 - Verifica quantos usuários únicos receberam acesso a um arquivo 

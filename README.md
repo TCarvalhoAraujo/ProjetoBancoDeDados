@@ -108,3 +108,9 @@ específico através da tabela COMPARTILHAR.
 
 ### 4. Remover Acessos:
 - 
+
+## Função
+
+### Verificar Tempo de Alteração:
+- Essa função foi criada para verificar se um arquivo foi modificado há mais de 100 dias, 
+retornando um valor booleano (TRUE ou FALSE)

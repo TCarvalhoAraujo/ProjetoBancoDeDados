@@ -98,16 +98,16 @@ Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir
 ### 1. Verificar atividades:
 - Procedimento armazenado para atualizar a data da última versão na tabela 'ATIVIDADE_RECENTES'.
 
+### 2. Remover Acessos:
+- Essa procedure buscará todos os compartilhamentos do arquivo especificado e os excluirá, exceto o compartilhamento do proprietário
 
-### 2. Conta Usuario:
+
+### 3. Conta Usuario:
 - Verifica quantos usuários únicos receberam acesso a um arquivo 
 específico através da tabela COMPARTILHAR.
 
-### 3. Chavear:
+### 4. Chavear:
 - A procedure CHAVEAR alterna o status do campo ACESSO_PRIORITARIO para um arquivo específico na tabela ATIVIDADES_RECENTES, identificando-o pelo ID fornecido como parâmetro de entrada.
-
-### 4. Remover Acessos:
-- Essa procedure buscará todos os compartilhamentos do arquivo especificado e os excluirá, exceto o compartilhamento do proprietário
 
 ## Função
 
@@ -129,3 +129,18 @@ seja atualizada ou populada com informações referentes à última operação r
 ### 3. Atualizar Acesso:
 - Essa trigger foi criada para toda vez que o usuario compartilhar algo ele vai
 mudar a data de modificação na area do arquivo.
+
+### 4. Registrar Create File:
+- Essa trigger foi criada para depois de criar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(create), id_arquivo id_usuario, data_operacao.
+
+### 5. Registrar Update File:
+- Essa trigger foi criada para depois atualizar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(update), id_arquivo id_usuario, data_operacao.
+
+### 6. Registrar Delete File:
+- Essa trigger foi criada para antes de deletar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(delete), id_arquivo id_usuario, data_operacao.
+
+### 7. Versionamento Create File:
+- Essa trigger foi criada para, após a inserção de um novo arquivo na tabela ARQUIVO, realizar um INSERT na tabela HISTORICO_VERSIONAMENTO, registrando o ID do arquivo, o ID do usuário, a data de versionamento, a operação (create), e o conteúdo da operação.
+
+### 8. Versionamento Update File:
+- Essa trigger foi criada para, após a atualização de um arquivo na tabela ARQUIVO, realizar um INSERT na tabela HISTORICO_VERSIONAMENTO, registrando o ID do arquivo, o ID do usuário, a data de versionamento, a operação (update), e o conteúdo da operação.

@@ -119,7 +119,8 @@ retornando um valor booleano (TRUE ou FALSE)
 ## Triggers
 
 ### 1. Safe Security:
--  Impede que arquivos executaveis sejam inseridos no drive
+-  Essa trigger é executada antes de uma atualização na tabela ARQUIVO e tem como objetivo 
+garantir a segurança do sistema ao bloquear a atualização de arquivos com tipos executáveis 
 
 ### 2. Registrar Operação:
 - Essa trigger foi criada para ser executada automaticamente após a inserção de um

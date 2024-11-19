@@ -91,4 +91,19 @@ Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir
 
 - **Índices** foram utilizados para otimizar consultas em tabelas grandes.
 - **Foreign Keys** foram implementadas para assegurar a integridade referencial entre as tabelas.
-- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados 
+- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados
+
+## Procedures
+
+### 1. Verificar atividades:
+- a
+
+### 2. Conta Usuario:
+- Verifica quantos usuários únicos receberam acesso a um arquivo 
+específico através da tabela COMPARTILHAR.
+
+### 3. Chavear:
+- A procedure CHAVEAR alterna o status do campo ACESSO_PRIORITARIO para um arquivo específico na tabela ATIVIDADES_RECENTES, identificando-o pelo ID fornecido como parâmetro de entrada.
+
+### 4. Remover Acessos:
+- 

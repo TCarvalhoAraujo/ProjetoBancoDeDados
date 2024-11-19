@@ -183,7 +183,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(303, 189);
+            this.label8.Location = new System.Drawing.Point(355, 190);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 22);
             this.label8.TabIndex = 12;
@@ -193,7 +193,7 @@
             // 
             this.Rdb_1.AutoSize = true;
             this.Rdb_1.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rdb_1.Location = new System.Drawing.Point(306, 224);
+            this.Rdb_1.Location = new System.Drawing.Point(312, 224);
             this.Rdb_1.Name = "Rdb_1";
             this.Rdb_1.Size = new System.Drawing.Size(42, 20);
             this.Rdb_1.TabIndex = 13;
@@ -206,7 +206,7 @@
             // 
             this.Rdb_2.AutoSize = true;
             this.Rdb_2.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rdb_2.Location = new System.Drawing.Point(354, 224);
+            this.Rdb_2.Location = new System.Drawing.Point(360, 224);
             this.Rdb_2.Name = "Rdb_2";
             this.Rdb_2.Size = new System.Drawing.Size(59, 20);
             this.Rdb_2.TabIndex = 14;
@@ -219,12 +219,12 @@
             // 
             this.Rdb_3.AutoSize = true;
             this.Rdb_3.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rdb_3.Location = new System.Drawing.Point(419, 224);
+            this.Rdb_3.Location = new System.Drawing.Point(425, 224);
             this.Rdb_3.Name = "Rdb_3";
-            this.Rdb_3.Size = new System.Drawing.Size(71, 20);
+            this.Rdb_3.Size = new System.Drawing.Size(63, 20);
             this.Rdb_3.TabIndex = 15;
             this.Rdb_3.TabStop = true;
-            this.Rdb_3.Text = "Bradesco";
+            this.Rdb_3.Text = "Unimed";
             this.Rdb_3.UseVisualStyleBackColor = true;
             this.Rdb_3.CheckedChanged += new System.EventHandler(this.Rdb_3_CheckedChanged);
             // 
@@ -247,6 +247,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Frm_CreateAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Account";

@@ -80,9 +80,9 @@
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 22);
+            this.label2.Size = new System.Drawing.Size(285, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Enter the File ID:";
+            this.label2.Text = "Enter the File ID you need help with:";
             // 
             // label3
             // 
@@ -99,7 +99,7 @@
             this.Txt_FileID.BackColor = System.Drawing.Color.Azure;
             this.Txt_FileID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_FileID.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FileID.Location = new System.Drawing.Point(157, 113);
+            this.Txt_FileID.Location = new System.Drawing.Point(305, 113);
             this.Txt_FileID.Name = "Txt_FileID";
             this.Txt_FileID.Size = new System.Drawing.Size(34, 21);
             this.Txt_FileID.TabIndex = 4;

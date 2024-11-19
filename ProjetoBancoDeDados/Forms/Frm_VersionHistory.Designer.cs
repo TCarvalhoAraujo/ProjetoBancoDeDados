@@ -155,8 +155,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_Version);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Frm_VersionHistory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "History Version";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_HistoryVersion)).EndInit();
             this.ResumeLayout(false);

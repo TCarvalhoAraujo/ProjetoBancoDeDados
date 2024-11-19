@@ -98,7 +98,7 @@ namespace ProjetoBancoDeDados.Queries
         public bool ValidateAdminLogin(String email, String password, int ID)
         {
             string verifyQuery = "SELECT COUNT(*) FROM ADMINISTRADOR " +
-                                 "WHERE LOGIN = @LOGIN " +
+                                 "WHERE SENHA = @SENHA " +
                                  "AND EMAIL = @EMAIL " +
                                  "AND ID_ADMIN = @ID_ADMIN";
 
@@ -114,12 +114,12 @@ namespace ProjetoBancoDeDados.Queries
 
                 using (MySqlCommand verifyCommand = new MySqlCommand(verifyQuery, connection))
                 {
-                    verifyCommand.Parameters.AddWithValue("@LOGIN", email);
-                    verifyCommand.Parameters.AddWithValue("@EMAIL", password);
+                    verifyCommand.Parameters.AddWithValue("@SENHA", password);
+                    verifyCommand.Parameters.AddWithValue("@EMAIL", email);
                     verifyCommand.Parameters.AddWithValue("@ID_ADMIN", ID);
 
                     int count = Convert.ToInt32(verifyCommand.ExecuteScalar());
-                    if (count > 0)
+                    if (count < 0)
                     {
                         return false;
                     }

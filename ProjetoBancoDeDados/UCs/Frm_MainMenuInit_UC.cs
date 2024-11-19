@@ -35,7 +35,7 @@ namespace ProjetoBancoDeDados.UCs
             }
             else
             {
-                MessageBox.Show("0 Files Found!",
+                MessageBox.Show("No Files Found!",
                                 "Error",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);

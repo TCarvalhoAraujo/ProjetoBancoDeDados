@@ -52,12 +52,12 @@ namespace ProjetoBancoDeDados.Forms
             Txt_Location.Text = arquivo.Localizacao;
 
             int countUserAccess = fileRepo.CountUserAccess(Convert.ToInt32(Txt_FileID.Text));
-            if (countUserAccess == -1)
+            if (countUserAccess == - 1)
             {
                 MessageBox.Show("Couldn't load who has access to this file",
                                 "Error",
                                 MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                                MessageBoxIcon.Error);
             }
             else
             {
@@ -81,12 +81,12 @@ namespace ProjetoBancoDeDados.Forms
             Txt_Location.Text = arquivo.Localizacao;
 
             int countUserAccess = fileRepo.CountUserAccess(Convert.ToInt32(Txt_FileID.Text));
-            if (countUserAccess == -1)
+            if (countUserAccess == - 1)
             {
                 MessageBox.Show("Couldn't load who has access to this file",
                                 "Error",
                                 MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                                MessageBoxIcon.Error);
             }
             else
             {

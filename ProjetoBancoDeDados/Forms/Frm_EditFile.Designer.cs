@@ -344,7 +344,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_Content);
             this.Controls.Add(this.Btn_UpdateFile);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Frm_EditFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit File";

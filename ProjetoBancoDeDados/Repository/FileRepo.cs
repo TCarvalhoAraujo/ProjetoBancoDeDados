@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProjetoBancoDeDados.Repository
 {
@@ -474,7 +475,7 @@ namespace ProjetoBancoDeDados.Repository
                         {
                             if (reader.Read())
                             {
-                                return reader.GetInt32("numero de usuarios");
+                                return reader.GetInt32("numero_de_usuarios");
                             }
                             else
                             {
@@ -485,7 +486,11 @@ namespace ProjetoBancoDeDados.Repository
                 }
                 catch (MySqlException e)
                 {
-                    return -1;
+                    MessageBox.Show($"Erro ao acessar o banco de dados: {e.Message}",
+                                    "Erro",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                    return - 1;
                 }
             }
         }

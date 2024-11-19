@@ -112,7 +112,7 @@
             this.Controls.Add(this.Txt_FileID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Btn_DeleteFile);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Frm_DeleteFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Delete File";

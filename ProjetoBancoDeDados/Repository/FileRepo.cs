@@ -163,27 +163,36 @@ namespace ProjetoBancoDeDados.Repository
                            "LOCALIZACAO = @LOCALIZACAO, URL = @URL, CONTEUDO = @CONTEUDO " +
                            "WHERE ID_ARQUIVO = @ID_ARQUIVO";
 
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            try
             {
-                connection.Open();
-
-                using (MySqlCommand command = new MySqlCommand(query, connection))
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    command.Parameters.AddWithValue("@NOME", nome);
-                    command.Parameters.AddWithValue("@TIPO", tipo);
-                    command.Parameters.AddWithValue("@PERMISSAO", permissao);
-                    command.Parameters.AddWithValue("@TAMANHO", conteudo.Length * 0.01);
-                    command.Parameters.AddWithValue("@DATA_MODIFICACAO", DateTime.Now);
-                    command.Parameters.AddWithValue("@LOCALIZACAO", localizacao);
-                    command.Parameters.AddWithValue("@URL", nome + tipo);
-                    command.Parameters.AddWithValue("@CONTEUDO", conteudo);
-                    command.Parameters.AddWithValue("@ID_ARQUIVO", id_arquivo);
+                    connection.Open();
 
-                    int rowsAffected = command.ExecuteNonQuery();
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@NOME", nome);
+                        command.Parameters.AddWithValue("@TIPO", tipo);
+                        command.Parameters.AddWithValue("@PERMISSAO", permissao);
+                        command.Parameters.AddWithValue("@TAMANHO", conteudo.Length * 0.01);
+                        command.Parameters.AddWithValue("@DATA_MODIFICACAO", DateTime.Now);
+                        command.Parameters.AddWithValue("@LOCALIZACAO", localizacao);
+                        command.Parameters.AddWithValue("@URL", nome + tipo);
+                        command.Parameters.AddWithValue("@CONTEUDO", conteudo);
+                        command.Parameters.AddWithValue("@ID_ARQUIVO", id_arquivo);
 
-                    return rowsAffected > 0;
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro inesperado: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            
         }
         
         public bool DeleteFile(int fileID, String password)

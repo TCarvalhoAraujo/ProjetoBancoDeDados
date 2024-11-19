@@ -114,3 +114,18 @@ específico através da tabela COMPARTILHAR.
 ### Verificar Tempo de Alteração:
 - Essa função foi criada para verificar se um arquivo foi modificado há mais de 100 dias, 
 retornando um valor booleano (TRUE ou FALSE)
+
+
+## Triggers
+
+### 1. Safe Security:
+- a
+
+### 2. Registrar Operação:
+- Essa trigger foi criada para ser executada automaticamente após a inserção de um
+registro na tabela OPERAR. O objetivo principal é garantir que a tabela ATIVIDADES_RECENTES
+seja atualizada ou populada com informações referentes à última operação realizada em um arquivo.
+
+### 3. Atualizar Acesso:
+- Essa trigger foi criada para toda vez que o usuario compartilhar algo ele vai
+mudar a data de modificação na area do arquivo.

@@ -107,7 +107,7 @@ específico através da tabela COMPARTILHAR.
 - A procedure CHAVEAR alterna o status do campo ACESSO_PRIORITARIO para um arquivo específico na tabela ATIVIDADES_RECENTES, identificando-o pelo ID fornecido como parâmetro de entrada.
 
 ### 4. Remover Acessos:
-- 
+- Essa procedure buscará todos os compartilhamentos do arquivo especificado e os excluirá, exceto o compartilhamento do proprietário
 
 ## Função
 

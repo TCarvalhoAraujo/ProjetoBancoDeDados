@@ -119,7 +119,7 @@ retornando um valor booleano (TRUE ou FALSE)
 ## Triggers
 
 ### 1. Safe Security:
-- a
+-  Impede que arquivos executaveis sejam inseridos no drive
 
 ### 2. Registrar Operação:
 - Essa trigger foi criada para ser executada automaticamente após a inserção de um

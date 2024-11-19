@@ -91,4 +91,57 @@ Cada script foi desenvolvido com o objetivo de otimizar a performance e garantir
 
 - **Índices** foram utilizados para otimizar consultas em tabelas grandes.
 - **Foreign Keys** foram implementadas para assegurar a integridade referencial entre as tabelas.
-- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados 
+- **Roles e Permissões** permitem uma gestão segura e flexível do acesso a dados
+
+## Procedures
+
+### 1. Verificar atividades:
+- Procedimento armazenado para atualizar a data da última versão na tabela 'ATIVIDADE_RECENTES'.
+
+### 2. Remover Acessos:
+- Essa procedure buscará todos os compartilhamentos do arquivo especificado e os excluirá, exceto o compartilhamento do proprietário
+
+
+### 3. Conta Usuario:
+- Verifica quantos usuários únicos receberam acesso a um arquivo 
+específico através da tabela COMPARTILHAR.
+
+### 4. Chavear:
+- A procedure CHAVEAR alterna o status do campo ACESSO_PRIORITARIO para um arquivo específico na tabela ATIVIDADES_RECENTES, identificando-o pelo ID fornecido como parâmetro de entrada.
+
+## Função
+
+### Verificar Tempo de Alteração:
+- Essa função foi criada para verificar se um arquivo foi modificado há mais de 100 dias, 
+retornando um valor booleano (TRUE ou FALSE)
+
+
+## Triggers
+
+### 1. Safe Security:
+-  Essa trigger é executada antes de uma atualização na tabela ARQUIVO e tem como objetivo 
+garantir a segurança do sistema ao bloquear a atualização de arquivos com tipos executáveis 
+
+### 2. Registrar Operação:
+- Essa trigger foi criada para ser executada automaticamente após a inserção de um
+registro na tabela OPERAR. O objetivo principal é garantir que a tabela ATIVIDADES_RECENTES
+seja atualizada ou populada com informações referentes à última operação realizada em um arquivo.
+
+### 3. Atualizar Acesso:
+- Essa trigger foi criada para toda vez que o usuario compartilhar algo ele vai
+mudar a data de modificação na area do arquivo.
+
+### 4. Registrar Create File:
+- Essa trigger foi criada para depois de criar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(create), id_arquivo id_usuario, data_operacao.
+
+### 5. Registrar Update File:
+- Essa trigger foi criada para depois atualizar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(update), id_arquivo id_usuario, data_operacao.
+
+### 6. Registrar Delete File:
+- Essa trigger foi criada para antes de deletar um arquivo na tabela arquivo insere os dados na tabela operar tipo_operacao(delete), id_arquivo id_usuario, data_operacao.
+
+### 7. Versionamento Create File:
+- Essa trigger foi criada para, após a inserção de um novo arquivo na tabela ARQUIVO, realizar um INSERT na tabela HISTORICO_VERSIONAMENTO, registrando o ID do arquivo, o ID do usuário, a data de versionamento, a operação (create), e o conteúdo da operação.
+
+### 8. Versionamento Update File:
+- Essa trigger foi criada para, após a atualização de um arquivo na tabela ARQUIVO, realizar um INSERT na tabela HISTORICO_VERSIONAMENTO, registrando o ID do arquivo, o ID do usuário, a data de versionamento, a operação (update), e o conteúdo da operação.
